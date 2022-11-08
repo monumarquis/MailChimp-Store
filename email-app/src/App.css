@@ -1,12 +1,1 @@
-@font-face {
-  font-family: "Heding";   /*Can be any text*/
-  src: local("GraphikLight"),
-url("./Fonts/Acme-Regular.ttf") format("truetype");
-}
 
-
-@font-face {
-  font-family: "Regular";   /*Can be any text*/
-  src: local("GraphikRegular"),
-    url("./Fonts/GraphikRegular.otf") format("otf");
-}

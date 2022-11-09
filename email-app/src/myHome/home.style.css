@@ -1,0 +1,24 @@
+.gridData{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    margin-top: 80px;
+    
+
+}
+@media screen and (max-width:990px){
+    .gridData{
+
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media screen and (max-width:590px){
+    .gridData{
+
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+}

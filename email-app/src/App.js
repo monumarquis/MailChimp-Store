@@ -7,6 +7,21 @@ function App() {
        <h1 style={{"fontFamily":"Heading"}}  > This font is for  Heading font</h1>
     </div>
   );
+}import './App.css';
+import Home from "./vaibhav/Home"
+import Pricing from './vaibhav/Pricing';
+function App() {
+  return (
+    <div className="App">
+ 
+       <Home/>
+      < Pricing/>
+      
+    </div>
+  );
 }
 
 export default App;
+
+
+

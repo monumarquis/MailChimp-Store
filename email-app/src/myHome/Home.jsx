@@ -1,13 +1,15 @@
 import { Box, Heading, Text, Button} from "@chakra-ui/react";
 import React, { useState } from "react";
-import VideoPlayer from 'react-video-js-player';
+
 import Desx1 from "../Assets/Desktop_Card1.webp";
 import Desx2 from "../Assets/Desktop_Card2.webp";
 import Desx3 from "../Assets/Desktop_Card3.webp";
 import Desx4 from "../Assets/Desktop_Card4.webp";
 import GridOne from "./grid1";
 import "./home.style.css";
-import VIdeoPoster from "../Assets/videoposter.webp"
+import VideoPoster from "../Assets/videoposter.webp"
+import Video from "../Assets/video.mp4";
+import VideoPlayer from 'react-video-js-player';
 
 let Data = [
   {
@@ -125,8 +127,16 @@ function Home() {
 
 
       {/* video section */}
-      <Box>
-  
+      <Box height="auto" width="100%" bg="#241c15" pt="100px" pb="100px">
+        <Box width="80%" height={{base: "50vh", md: "70vh", lg: "90vh" }} margin="auto" border="1px solid red">
+
+      <VideoPlayer
+                    controls={true}
+                    src={Video}
+                    poster={VideoPoster}
+                   className="videoplayer"
+                />
+        </Box>
       </Box>
 
       {/* pricing sections */}

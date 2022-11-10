@@ -1,0 +1,189 @@
+
+.HelpCenter-1stDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Heading-text{
+    font-size: 3vw;
+    text-align: start;
+}
+
+.Middle-text {
+    font-size: 20px;
+    text-align: start;
+}
+
+.Input-Box{
+    border-bottom: solid gray 1px;
+}
+.Input-Box>Input{
+    border: none;
+}
+
+.Div-text{
+    font-size: 32px;
+    text-align: start;
+    padding-left: 2%;
+}
+
+.HelpCenter-Grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* padding: 2%; */
+    
+}
+.Grid {
+    height: auto;
+    /* border: solid brown 1px; */
+    margin: 3%;
+}
+
+.Grid-text1{
+    font-size: 24px;
+    color: teal;
+    text-align: start;
+    padding: 3%;
+}
+.Grid-text2{
+    padding: 3%;
+}
+
+.Help-button{
+    text-align: start;
+}
+.A-tag{
+    margin-left: 30px;
+}
+.Help-button>button{
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffe01b;
+    cursor: pointer;
+}
+.HelpCenter-Grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* padding: 2%; */
+    
+}
+
+.HelpCenter-1stDiv-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Help-button-2{
+    text-align: start;
+}
+
+.Help-button-2>button{
+    /* width: 20%; */
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.Grid-2 {
+    height: auto;
+    /* border: solid brown 1px; */
+    margin: 3%;
+}
+.Grid-2:hover {
+   cursor: pointer;
+   /* color: red; */
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+@media screen and (max-width:1100px){
+    .HelpCenter-1stDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Heading-text{
+        width: 90%;
+        font-size: 45px;
+    }
+    
+    .Middle-text {
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .Div-text{
+        font-size: 30px;
+        text-align: start;
+    }
+    .HelpCenter-Grid{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 2%; */
+    }
+    .Grid-text1{
+        font-size: 27px;
+    }
+    .Grid-text2{
+        font-size: 19px;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    .HelpCenter-Grid2{
+        grid-template-columns: repeat(2,1fr);
+        /* padding: 2%; */
+        
+    }
+    .HelpCenter-1stDiv-2{
+        display: flex;
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media screen and (max-width: 590px){
+    .HelpCenter-1stDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Heading-text{
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .Middle-text {
+        width: 100%;
+        font-size: 19px;
+        margin-bottom: 40px;
+    }
+    .Div-text{
+        font-size: 5vw;
+        text-align: start;
+    }
+    .HelpCenter-Grid{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap: 2%; */
+    }
+    .Grid-text1{
+        font-size: 27px;
+    }
+    .Grid-text2{
+        font-size: 19px;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+    .HelpCenter-Grid2{
+        grid-template-columns: repeat(1,1fr);
+        /* padding: 2%; */
+        
+    }
+    .HelpCenter-1stDiv-2{
+        display: flex;
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column-reverse;
+    }
+}

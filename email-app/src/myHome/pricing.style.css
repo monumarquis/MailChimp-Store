@@ -34,12 +34,20 @@
 .cards1:hover ,.cards2:hover,.cards3:hover ,.cards4:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
+    border: 1px solid black;
    
 }  
 .cards p{
     font-size: 14px;
 }
-
+.plan-btn{
+    transition: .3s ease-out;
+}
+.plan-btn:hover{
+    transform: translateY(-10px);
+    background-color: #ffe01b;
+    
+}
 
 @media screen and (max-width:990px){
     .price_section{

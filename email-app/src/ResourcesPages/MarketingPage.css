@@ -23,6 +23,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2%;
 }
+
 .succes-stories:hover{
     color: teal;
     margin-right: 50px;
@@ -67,11 +68,12 @@
     /* .Image-text{
         font-size: 40px;
     } */
+    
     .Market-trending{
         display: grid;
         grid-template-columns: 100% 100%;
     }
-    
+ 
   }
   
   @media screen and (max-width: 590px) {
@@ -86,6 +88,7 @@
         grid-template-columns: repeat(1, 1fr);
         /* gap: 2%; */
     }
+    
     .Marketing-grid-3{
         display: grid;
         grid-template-columns: 100%;
@@ -95,6 +98,7 @@
         display: grid;
         grid-template-columns: 100% 100%;
     }
+    
   }
 
 

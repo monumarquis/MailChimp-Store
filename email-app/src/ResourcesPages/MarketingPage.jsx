@@ -5,6 +5,12 @@ import { FaArrowRight } from "react-icons/fa";
 import "./MarketingPage.css";
 import "./MailChimp.css";
 
+
+import { BsArrowUpRight } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
+import "./MarketingPage.css";
+import "./MailChimp.css";
+
 import ResourcesNavbar from "./ResourcesNavbar";
 
 
@@ -16,9 +22,13 @@ const MarketingPage = () => {
             </div>
             <Container w="full">
                 <Container >
+                
                     <Box 
                     // border="solid red 1px" 
                     margin="auto">
+                    
+                    <Box border="solid red 1px" margin="auto">
+
                         <Box margin="auto" marginTop="200px" >
                             <Text fontSize="45px" fontWeight="500">Marketing meets inspiration</Text>
                         </Box>
@@ -29,12 +39,17 @@ const MarketingPage = () => {
                     </Box>
                 </Container>
 
+
                 <Container 
                 // border="solid red 1px" 
                 margin="auto" >
                     <Box w="70%" 
                     border="solid #f9e0fa 1px" 
                     margin="auto" bgColor="#f9e0fa">
+
+                <Container border="solid red 1px" margin="auto">
+                    <Box w="70%" border="solid green 1px" margin="auto" bgColor="#f9e0fa">
+
                         <Box >
                             <Image className="Box-Image" src="https://eep.io/images/yzco4xsimv0y/5Sn7YqszK1FVsDtNI3zdJ2/ee06f4c67cde6cc464838e1312197bfe/Customer_Retention__Overview_and_Strategies-Recirculation.jpg?w=1550&fm=webp&q=80" alt="" />
                         </Box>
@@ -52,14 +67,22 @@ const MarketingPage = () => {
                         </Box>
                     </Box>
 
+
                     <Box w="70%" 
                     // border="solid brown 1px" 
                     margin="auto" marginTop="30px">
+
+                    <Box w="70%" border="solid brown 1px" margin="auto" marginTop="30px">
+
                         <Box className="Marketing-grid" >
                             <Box >
                                 <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/7MatNpD7IiTQaFU9TMUqD3/15794cb20d7ba9688e7670882ccab208/Furniture_maker_Mac_Collins.jpg?w=1550&fm=webp&q=80" alt="" />
 
+
                                 <Box border="solid #efeeea 1px" bgColor="#efeeea">
+
+                                <Box border="solid red 1px" bgColor="#efeeea">
+
                                     <Text className="text-hover" fontSize='17px' fontWeight="600">SUCCESS STORIES</Text>
 
                                     <Flex>
@@ -77,7 +100,11 @@ const MarketingPage = () => {
                             <Box>
                                 <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/3prB5zDsGn3HNScOz1UOQI/e8066649a85a48397b67a8943a89a057/26_MarketingLibrary.png?w=1550&fm=webp&q=80" alt="" />
 
+
                                 <Box border="solid #c5dbf2 1px" bgColor="#c5dbf2" >
+
+                                <Box border="solid red 1px" bgColor="#c5dbf2" >
+
                                     <Text className="text-hover" fontSize='17px' fontWeight="600" marginTop="80px">MAILCHIMP PRESENTS</Text>
 
                                     <Flex>
@@ -90,19 +117,32 @@ const MarketingPage = () => {
                         </Box>
                     </Box>
 
+
                     <Box w="70%" 
                     // border="solid brown 1px" 
                     margin="auto" marginTop="30px" marginBottom="100px">
                         <Box className="Marketing-Business-grid" >
                             <Box boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" padding="25px">
+
+                    <Box w="70%" border="solid brown 1px" margin="auto" marginTop="30px">
+                        <Box className="Marketing-Business-grid" >
+                            <Box boxShadow= "rgba(0, 0, 0, 0.24) 0px 3px 8px" padding="25px">
+
                                 <Text>EXPLORE</Text>
 
                                 <Text fontSize="40px">Business Stages</Text>
+
 
                                 <Box
                                     // border="solid red 1px"
                                     textAlign="start">
                                     <Flex className="boom-MailChimp-6B"
+
+                                <Box 
+                                // border="solid red 1px"
+                                 textAlign="start">
+                                    <Flex className="boom-MailChimp-6B" 
+
                                     // border="solid green 1px" 
                                     >
                                         <div>
@@ -120,9 +160,15 @@ const MarketingPage = () => {
 
                                 <Box border="solid black 0.5px" bgColor="black"></Box>
 
+
                                 <Box
                                     // border="solid red 1px"
                                     textAlign="start" marginTop="20px">
+
+                                <Box 
+                                // border="solid red 1px"
+                                 textAlign="start" marginTop="20px">
+
                                     <Flex className="boom-MailChimp-6B" >
                                         <div>
                                             <Text w="100%" fontSize="24px" marginRight="40px">Manage & Run</Text>
@@ -139,9 +185,15 @@ const MarketingPage = () => {
 
                                 <Box border="solid black 0.5px" bgColor="black"></Box>
 
+
                                 <Box
                                     // border="solid red 1px"
                                     textAlign="start" marginTop="20px">
+
+                                <Box 
+                                // border="solid red 1px"
+                                 textAlign="start" marginTop="20px">
+
                                     <Flex className="boom-MailChimp-6B" >
                                         <div>
                                             <Text w="100%" fontSize="24px" marginRight="40px">Grow & Scale</Text>
@@ -161,12 +213,17 @@ const MarketingPage = () => {
 
                             </Box>
 
+
                             <Box boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" padding="25px" >
+
+                            <Box boxShadow= "rgba(0, 0, 0, 0.24) 0px 3px 8px" padding="25px" >
+
                                 <Box marginBottom="80px">
                                     <Text>DISCOVER</Text>
 
                                     <Text fontSize="40px">Marketing Tactics</Text>
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> Marketing Automations</h2>
@@ -175,11 +232,22 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> Marketing Automations</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> Email</h2>
@@ -188,11 +256,22 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> Email</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> Social Media</h2>
@@ -201,11 +280,22 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> Social Media</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> Websites</h2>
@@ -214,11 +304,22 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> Websites</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> CRM</h2>
@@ -226,12 +327,22 @@ const MarketingPage = () => {
                                                     <Text className="Text"><FaArrowRight /></Text>
                                                 </div>
                                             </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> CRM</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
                                         </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> E-commerce</h2>
@@ -240,11 +351,22 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> E-commerce</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
 
                                     <Box padding="10px">
+
                                         <div className="boom-MailChimp-6B">
                                             <div className="innerDiv">
                                                 <h2> Digital Content</h2>
@@ -253,6 +375,16 @@ const MarketingPage = () => {
                                                 </div>
                                             </div>
                                         </div>
+=======
+                                    <div className="boom-MailChimp-6B">
+                                        <div className="innerDiv">
+                                            <h2> Digital Content</h2>
+                                            <div className="boom-MailChimp-Arrow">
+                                                <Text className="Text"><FaArrowRight /></Text>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     </Box>
 
                                     <div className="border-bottom"></div>
@@ -261,6 +393,7 @@ const MarketingPage = () => {
                         </Box>
                     </Box>
                 </Container>
+
 
                 {/* SUCCESS STORIES */}
 
@@ -405,6 +538,8 @@ const MarketingPage = () => {
                         </button>
                     </div>
                 </Container>
+
+
             </Container>
         </div>
     )

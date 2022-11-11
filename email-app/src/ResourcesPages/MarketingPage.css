@@ -1,0 +1,69 @@
+
+
+.Marketing-Box{
+    width: 45%;
+}
+.Box-Image{
+    width: 50%;
+}
+.text-hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Marketing-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+/* .Image-text{
+    font-size: 40px;
+} */
+.Marketing-Business-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .Marketing-Box {
+      width: 80%;
+    }
+    .Box-Image{
+        width: 70%;
+    }
+    .Marketing-grid{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2%; */
+    }
+    /* .Image-text{
+        font-size: 40px;
+    } */
+  }
+  
+  @media screen and (max-width: 590px) {
+    .Marketing-Box {
+      width: 90%;
+    }
+    .Box-Image{
+        width: 90%;
+    }
+    .Marketing-grid{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2%; */
+    }
+  }
+
+
+  @media screen and (max-width: 750px){
+    .Marketing-Business-grid{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 2%; */
+    }
+  }

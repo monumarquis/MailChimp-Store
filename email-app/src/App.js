@@ -1,14 +1,20 @@
 
 
 import './App.css';
+import Accor from './ResourcesPages/Accordian';
+import HelpCenterPage from './ResourcesPages/HelpCenterPage';
 import MailChimp from './ResourcesPages/MailChimp101';
+import MarketingPage from './ResourcesPages/MarketingPage';
 import ResourcesNavbar from './ResourcesPages/ResourcesNavbar';
 
 function App() {
   return (
     <div className="App">
-      <MailChimp/>
+      {/* <MailChimp/> */}
       {/* <ResourcesNavbar/> */}
+      {/* <HelpCenterPage/> */}
+      <MarketingPage/>
+      {/* <Accor/> */}
     </div>
   );
 }

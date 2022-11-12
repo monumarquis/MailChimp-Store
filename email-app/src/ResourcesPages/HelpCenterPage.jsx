@@ -1,8 +1,15 @@
 
 
+
+import { Box, Button, Container, Flex, Image, Input, Text } from "@chakra-ui/react";
+import { FiSearch } from "react-icons/fi";
+import "./HelpCenterPage.css";
+import "./MarketingPage.css";
+
 import { Box, Container, Flex, Image, Input, Text } from "@chakra-ui/react";
 import { FiSearch } from "react-icons/fi";
 import "./HelpCenterPage.css"; 
+
 
 const HelpCenterPage = () => {
 
@@ -10,6 +17,20 @@ const HelpCenterPage = () => {
         <div>
             <Container w="full">
                 <Container margin="auto" border="solid #fbeeca 1px" bgColor="#fbeeca">
+
+                    <Box className="HelpCenter-1stDiv" w="80%" margin="auto"
+                        // border="solid green 1px" 
+                        marginTop="100px" marginBottom="100px">
+                        <Box
+                        // border="solid yellow 1px"
+                        >
+                            <Box
+                                // border="solid brown 1px" 
+                                marginTop="120px">
+                                <Text className="Heading-text">Know More, Do More with Mailchimp</Text>
+                            </Box>
+                            <Box
+
                     <Box className="HelpCenter-1stDiv" w="80%" margin="auto" 
                     // border="solid green 1px" 
                     marginTop="100px" marginBottom="100px">
@@ -22,24 +43,50 @@ const HelpCenterPage = () => {
                                 <Text className="Heading-text">Know More, Do More with Mailchimp</Text>
                             </Box>
                             <Box 
+
                             // border="solid brown 1px"
                             >
                                 <Text className="Middle-text">Get the most out of Mailchimp with our step‑by‑step videos and tutorials. Browse by topic or search by feature for 24/7 help with any stage of your business journey.</Text>
                             </Box>
                         </Box>
+
+                        <Box
+                        // border="solid yellow 1px"
+                        >
+                            <Image w="90%" src="https://eep.io/images/yzco4xsimv0y/2acL1QmHnWiQc0mYwYKi0C/dd5586458792da808d3376b4846a787a/guides-tutorials.png?w=760&fm=webp&q=70" alt="" />
+
                         <Box 
                         // border="solid yellow 1px"
                         >
                             <Image w="90%" src="https://eep.io/images/yzco4xsimv0y/2acL1QmHnWiQc0mYwYKi0C/dd5586458792da808d3376b4846a787a/guides-tutorials.png?w=760&fm=webp&q=70"  alt=""/>
+
                         </Box>
                     </Box>
                 </Container>
 
+
+                <Container w="80%" margin="auto"
+
                 <Container w="80%" margin="auto" 
+
                 // border="solid yellow 1px" 
                 >
                     <Flex className="Input-Box" margin="auto" marginTop="100px" alignItems="center">
                         <Input w="90%" padding="20px" fontSize="20px" variant='unstyled' placeholder='Search Help Center' />
+
+                        <Box fontSize="20px"><FiSearch /></Box>
+                    </Flex>
+
+                    <Box
+                        // border="solid red 1px" 
+                        marginTop="50px" >
+                        <Text className="Div-text" textAlign="start">Popular guides and tutorials</Text>
+                    </Box>
+
+                    <Box className="HelpCenter-Grid"
+                        // border="solid green 1px" 
+                        marginBottom="50px">
+
                         <Box fontSize="20px"><FiSearch/></Box>
                     </Flex>
 
@@ -52,6 +99,7 @@ const HelpCenterPage = () => {
                     <Box className="HelpCenter-Grid" 
                     // border="solid green 1px" 
                     marginBottom="50px">
+
                         <Box className="Grid">
                             <Text className="Grid-text1" textAlign="start">Getting Started with Tags</Text>
                             <Text className="Grid-text2" textAlign="start">Tags are labels you create to help organize your contacts in Mailchimp. Learn how to use tags, where to find them, and how to get started.</Text>
@@ -87,6 +135,19 @@ const HelpCenterPage = () => {
                 {/* YELLOW DIV */}
 
                 <Container bgColor="#ffe01b" marginTop="80px">
+
+                    <Box className="HelpCenter-1stDiv" width="70%" margin="auto"
+                    // border="solid red 1px" 
+                    >
+                        <Box
+                            // border="solid 1px red" 
+                            marginTop="100px">
+                            <Image w="80%" src="https://mailchimp.com/static/images/contact-mailchimp.png" alt="" />
+                        </Box>
+                        <Box
+                            // border="solid 1px red" 
+                            marginTop="100px">
+
                     <Box className="HelpCenter-1stDiv" width="70%" margin="auto" 
                     // border="solid red 1px" 
                     >
@@ -98,12 +159,38 @@ const HelpCenterPage = () => {
                         <Box 
                         // border="solid 1px red" 
                         marginTop="100px">
+
                             <Box w="95%">
                                 <Text className="Heading-text">Contact our support team</Text>
                             </Box>
                             <Box w="80%">
                                 <Text className="Middle-text">Have more questions? Paid users can log in and email or chat with us.</Text>
                             </Box>
+
+
+                            {/* <div className="Help-button">
+                                <button className="button">
+                                    Ask Away
+                                </button>
+                            </div> */}
+
+                            <Box w="150px" h="50px" bg="black"  borderRadius="50px" marginBottom="100px" textAlign="start">
+                                <Button
+                                    className="Marketing-btn-buy"
+                                    position="-moz-initial"
+                                    display="block"
+                                    margin="auto"
+                                    w="100%"
+                                    h="100%"
+                                    mb="50px"
+                                    bg="#FFE01B"
+                                    border="1px solid black"
+                                    borderRadius="50px"
+                                >
+                                    Ask Away
+                                </Button>
+                            </Box>
+
 
                             <div className="Help-button">
                                 <button className="button">
@@ -112,11 +199,26 @@ const HelpCenterPage = () => {
 
                                 {/* <a className="A-tag" href="">Log in</a> */}
                             </div>
+
                         </Box>
                     </Box>
                 </Container>
 
                 {/* Help by topic Section */}
+
+
+                <Container w="80%" margin="auto"
+                // border="solid yellow 1px" 
+                >
+                    <Box
+                        // border="solid red 1px" 
+                        marginTop="50px" >
+                        <Text className="Div-text" textAlign="start">Help by topic</Text>
+                    </Box>
+
+                    <Box className="HelpCenter-Grid2"
+                        // border="solid green 1px" 
+                        marginBottom="100px">
 
                 <Container w="80%" margin="auto" 
                 // border="solid yellow 1px" 
@@ -130,6 +232,7 @@ const HelpCenterPage = () => {
                     <Box className="HelpCenter-Grid2" 
                     // border="solid green 1px" 
                     marginBottom="100px">
+
                         <Box className="Grid-2">
                             <Text className="Grid-text1" textAlign="start" fontSize="35px" fontWeight="500">Accounts</Text>
                             <Text className="Grid-text2" textAlign="start">Set up your account, learn about billing, and stay up-to-date on compliance policies.</Text>
@@ -244,6 +347,49 @@ const HelpCenterPage = () => {
 
                 <Container>
 
+
+                    <Container margin="auto"
+                    // border="solid red 1px" 
+                    >
+                        <Box className="HelpCenter-1stDiv-2" w="80%" margin="auto"
+                            // border="solid green 1px" 
+                            marginTop="120px" marginBottom="120px">
+                            <Box
+                            // border="solid yellow 1px"
+                            >
+                                <Box
+                                    // border="solid brown 1px" 
+                                    marginTop="50px">
+                                    <Text className="Heading-text">Watch a webinar</Text>
+                                </Box>
+                                <Box
+                                    // border="solid brown 1px" 
+                                    w="90%">
+                                    <Text className="Middle-text">Whether you’re just getting started or want to level up your marketing strategy, our webinars help set you up for success in Mailchimp. Register for a live session or watch recordings on-demand.</Text>
+                                </Box>
+                                <div className="Help-button-2">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        position="-moz-initial"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
+                                        Watch Now
+                                    </Button>
+                                </div>
+
+                            </Box>
+                            <Box
+                            // border="solid yellow 1px"
+                            >
+                                <Image w="70%" src="https://eep.io/images/yzco4xsimv0y/4EZ4VNCFDDUBoyhZK9KdtN/edb5b15b81b20c210adafeb719fc8700/ILLO_MiniSpot_CustomersOnlinev1_JamesDaw_1080x1080.png?w=760&fm=webp&q=80" alt="" />
+
                     <Container margin="auto" 
                     // border="solid red 1px" 
                     >
@@ -276,6 +422,7 @@ const HelpCenterPage = () => {
                             // border="solid yellow 1px"
                             >
                                 <Image w="70%" src="https://eep.io/images/yzco4xsimv0y/4EZ4VNCFDDUBoyhZK9KdtN/edb5b15b81b20c210adafeb719fc8700/ILLO_MiniSpot_CustomersOnlinev1_JamesDaw_1080x1080.png?w=760&fm=webp&q=80"  alt=""/>
+
                             </Box>
                         </Box>
                     </Container>
@@ -286,6 +433,51 @@ const HelpCenterPage = () => {
                 <Box w="80%" margin="auto" border="solid black 0.5px" marginTop="50px" bgColor="black"></Box>
 
                 <Container>
+
+
+                    <Container margin="auto"
+                    // border="solid red 1px"
+                    >
+                        <Box className="HelpCenter-1stDiv" w="80%" margin="auto"
+                            // border="solid green 1px" 
+                            marginTop="120px" marginBottom="120px">
+                            <Box
+                            // border="solid yellow 1px"
+                            >
+                                <Image w="70%" src="https://eep.io/images/yzco4xsimv0y/6CENZ3uNhuYSmQy4A4IOUc/23fda14ef9434da03bb9367447c37e4a/expert-help.png?w=760&fm=webp&q=80" alt="" />
+                            </Box>
+                            <Box
+                            // border="solid yellow 1px" 
+                            >
+                                <Box
+                                    // border="solid brown 1px" 
+                                    marginTop="50px">
+                                    <Text className="Heading-text">Get help from an expert</Text>
+                                </Box>
+                                <Box
+                                    // border="solid brown 1px" 
+                                    w="90%">
+                                    <Text className="Middle-text">Need a hand with template design, using Mailchimp's advanced features, or general marketing strategy? Use our experts directory to find someone who can help you make things happen.</Text>
+                                </Box>
+                                <div className="boom-MailChimp9-button">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        position="-moz-initial"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
+                                        Browse the directory
+                                    </Button>
+                                </div>
+
+                            </Box>
+
 
                     <Container margin="auto" 
                     // border="solid red 1px"
@@ -321,6 +513,7 @@ const HelpCenterPage = () => {
 
                             </Box>
                            
+
                         </Box>
                     </Container>
                 </Container>
@@ -329,6 +522,55 @@ const HelpCenterPage = () => {
                 <Box w="80%" margin="auto" border="solid black 0.5px" marginTop="50px" bgColor="black"></Box>
 
                 <Container>
+
+
+                    <Container margin="auto"
+                    // border="solid red 1px" 
+                    >
+                        <Box className="HelpCenter-1stDiv-2" w="80%" margin="auto"
+                            // border="solid green 1px" 
+                            marginTop="120px" marginBottom="120px">
+                            <Box
+                            // border="solid yellow 1px"
+                            >
+                                <Box
+                                    // border="solid brown 1px" 
+                                    marginTop="50px">
+                                    <Text className="Heading-text">Still have questions?</Text>
+                                </Box>
+                                <Box
+                                    // border="solid brown 1px" 
+                                    w="90%">
+                                    <Text className="Middle-text">If you have a question about something that isn't covered here, check out our additional resources. And if that doesn't do the trick, you can send an inquiry through our contact form.</Text>
+                                </Box>
+                                {/* <div className="Help-button-2">
+                                    <button className="button">
+                                        Contact us
+                                    </button>
+                                </div> */}
+
+                                <div className="Help-button-2">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        position="-moz-initial"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
+                                        Contact us
+                                    </Button>
+                                </div>
+
+                            </Box>
+                            <Box
+                            // border="solid yellow 1px"
+                            >
+                                <Image w="70%" src="https://eep.io/images/yzco4xsimv0y/4ggb8bfvrOyCiGkwyyKEQ4/237acc9d210ebeb0fd9c55127d457563/signup-pencil.png?w=760&fm=webp&q=80" alt="" />
 
                     <Container margin="auto" 
                     // border="solid red 1px" 
@@ -362,6 +604,7 @@ const HelpCenterPage = () => {
                             // border="solid yellow 1px"
                             >
                                 <Image w="70%" src="https://eep.io/images/yzco4xsimv0y/4ggb8bfvrOyCiGkwyyKEQ4/237acc9d210ebeb0fd9c55127d457563/signup-pencil.png?w=760&fm=webp&q=80"  alt=""/>
+
                             </Box>
                         </Box>
                     </Container>

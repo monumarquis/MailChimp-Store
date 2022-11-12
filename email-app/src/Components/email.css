@@ -1,0 +1,118 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    gap: 2px;
+    margin-top:2%;
+    padding:9px;
+    margin-left:4%;
+}
+.start_box{
+    width: 550px;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.container>div{
+    /* border: 2px solid red; */
+    cursor: pointer;
+    margin: auto;
+    padding: 5%;
+}
+
+.heading{
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.heading:hover{
+    text-decoration: underline;
+}
+.flex{
+    display: flex;
+    gap: 5%;
+}
+.container>div>div{
+   font-size: 20px;
+   border-radius: 10%;
+}
+.container>div div:hover{
+    background-color: yellow;
+    border-radius: 5%;
+}
+.plans{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 5%;
+    padding: 2%;
+}
+.plans>div{
+    /* margin-left: 5%; */
+    border: 1px solid ;
+    height: 850px;
+}
+.flex_res{
+    display: flex;
+    gap: 35px;
+    margin-left: 5%;
+}
+.pricing-child{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.price_section{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cards1 ,.cards2, .cards4 , .cards3{
+    padding: 20px;
+    background-color: white;
+}
+.cards1{
+    border:0.1px solid rgb(186, 180, 180);
+}
+.cards2{
+    border:0.1px solid rgb(186, 180, 180);
+    border-left: none;
+}
+.cards3{
+    border:0.1px solid rgb(186, 180, 180);
+    border-right: none;
+    border-left: none;
+}
+.cards4{
+    border:0.1px solid rgb(186, 180, 180);
+}
+.cards1:hover ,.cards2:hover,.cards3:hover ,.cards4:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+   
+}  
+.cards p{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:990px){
+    .price_section{
+
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+    .cards1 ,.cards2, .cards4 , .cards3{
+        border:0.1px solid rgb(186, 180, 180);
+        font-size: 14px;
+}
+}
+@media screen and (max-width:590px){
+    .price_section{
+
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+}

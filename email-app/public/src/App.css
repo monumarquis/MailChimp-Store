@@ -1,3 +1,6 @@
+.App {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;
@@ -38,3 +41,4 @@
   /* margin-bottom: 4px; */
   border-bottom: solid black 7px;
 }
+

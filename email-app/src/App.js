@@ -17,7 +17,7 @@ function App() {
       {/* <HelpCenterPage/> */}
       {/* <MarketingPage/> */}
       {/* <StoreHomePage/> */}
-      <StoreSetUp/>
+      {/* <StoreSetUp/> */}
     </div>
   );
 }

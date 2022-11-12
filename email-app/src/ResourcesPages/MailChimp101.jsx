@@ -402,6 +402,7 @@ const MailChimp = () => {
                                 <div className="boom-MailChimp9-button">
                                     <Button
                                         className="Marketing-btn-buy"
+                                        position="-moz-initial"
                                         display="block"
                                         margin="auto"
                                         w="100%"
@@ -475,6 +476,7 @@ const MailChimp = () => {
                                 <div className="boom-MailChimp9-button">
                                     <Button
                                         className="Marketing-btn-buy"
+                                        position="-moz-initial"
                                         display="block"
                                         margin="auto"
                                         w="100%"
@@ -599,6 +601,7 @@ const MailChimp = () => {
                     <Box w="150px" h="50px" bg="black" margin="auto" borderRadius="50px" marginBottom="100px">
                         <Button
                             className="Marketing-btn-buy"
+                            position="-moz-initial"
                             display="block"
                             margin="auto"
                             w="100%"

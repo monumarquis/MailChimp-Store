@@ -115,6 +115,7 @@ const HelpCenterPage = () => {
                             <Box w="150px" h="50px" bg="black"  borderRadius="50px" marginBottom="100px" textAlign="start">
                                 <Button
                                     className="Marketing-btn-buy"
+                                    position="-moz-initial"
                                     display="block"
                                     margin="auto"
                                     w="100%"
@@ -282,6 +283,7 @@ const HelpCenterPage = () => {
                                 <div className="Help-button-2">
                                     <Button
                                         className="Marketing-btn-buy"
+                                        position="-moz-initial"
                                         display="block"
                                         margin="auto"
                                         w="100%"
@@ -338,6 +340,7 @@ const HelpCenterPage = () => {
                                 <div className="boom-MailChimp9-button">
                                     <Button
                                         className="Marketing-btn-buy"
+                                        position="-moz-initial"
                                         display="block"
                                         margin="auto"
                                         w="100%"
@@ -390,6 +393,7 @@ const HelpCenterPage = () => {
                                 <div className="Help-button-2">
                                     <Button
                                         className="Marketing-btn-buy"
+                                        position="-moz-initial"
                                         display="block"
                                         margin="auto"
                                         w="100%"

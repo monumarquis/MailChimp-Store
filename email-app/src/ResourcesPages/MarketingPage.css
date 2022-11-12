@@ -47,6 +47,13 @@
     background-color: #fefef4;
     cursor: pointer;
 }
+.Marketing-btn-buy{
+    transition: .4s ease-out;
+    }
+.Marketing-btn-buy:hover{
+    transform: translateY(-8px);
+    background-color: "#FFE01B";
+}
 
 
 

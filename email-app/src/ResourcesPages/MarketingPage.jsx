@@ -1,5 +1,5 @@
 
-import { Box, Container, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
 import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 import "./MarketingPage.css";
@@ -16,9 +16,9 @@ const MarketingPage = () => {
             </div>
             <Container w="full">
                 <Container >
-                    <Box 
-                    // border="solid red 1px" 
-                    margin="auto">
+                    <Box
+                        // border="solid red 1px" 
+                        margin="auto">
                         <Box margin="auto" marginTop="200px" >
                             <Text fontSize="45px" fontWeight="500">Marketing meets inspiration</Text>
                         </Box>
@@ -29,14 +29,14 @@ const MarketingPage = () => {
                     </Box>
                 </Container>
 
-                <Container 
-                // border="solid red 1px" 
-                margin="auto" >
-                    <Box w="70%" 
-                    border="solid #f9e0fa 1px" 
-                    margin="auto" bgColor="#f9e0fa">
+                <Container
+                    // border="solid red 1px" 
+                    margin="auto" >
+                    <Box w="70%"
+                        border="solid #f9e0fa 1px"
+                        margin="auto" bgColor="#f9e0fa">
                         <Box >
-                            <Image className="Box-Image" src="https://eep.io/images/yzco4xsimv0y/5Sn7YqszK1FVsDtNI3zdJ2/ee06f4c67cde6cc464838e1312197bfe/Customer_Retention__Overview_and_Strategies-Recirculation.jpg?w=1550&fm=webp&q=80" alt="" />
+                            <Image className="Box-Image" src="https://eep.io/images/yzco4xsimv0y/5Sn7YqszK1FVsDtNI3zdJ2/ee06f4c67cde6cc464838e1312197bfe/Customer_Retention__Overview_and_Strategies-Recirculation.jpg?w=1550&fm=webp&q=80" alt="jpg" />
                         </Box>
 
                         <Box>
@@ -52,9 +52,9 @@ const MarketingPage = () => {
                         </Box>
                     </Box>
 
-                    <Box w="70%" 
-                    // border="solid brown 1px" 
-                    margin="auto" marginTop="30px">
+                    <Box w="70%"
+                        // border="solid brown 1px" 
+                        margin="auto" marginTop="30px">
                         <Box className="Marketing-grid" >
                             <Box >
                                 <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/7MatNpD7IiTQaFU9TMUqD3/15794cb20d7ba9688e7670882ccab208/Furniture_maker_Mac_Collins.jpg?w=1550&fm=webp&q=80" alt="" />
@@ -90,9 +90,9 @@ const MarketingPage = () => {
                         </Box>
                     </Box>
 
-                    <Box w="70%" 
-                    // border="solid brown 1px" 
-                    margin="auto" marginTop="30px" marginBottom="100px">
+                    <Box w="70%"
+                        // border="solid brown 1px" 
+                        margin="auto" marginTop="30px" marginBottom="100px">
                         <Box className="Marketing-Business-grid" >
                             <Box boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px" padding="25px">
                                 <Text>EXPLORE</Text>
@@ -264,12 +264,12 @@ const MarketingPage = () => {
 
                 {/* SUCCESS STORIES */}
 
-                <Container 
-                // border="solid green 1px" 
-                bgColor="#f6f6f4">
-                    <Box w="70%" 
-                    // border="solid brown 1px" 
-                    margin="auto" marginBottom="100px">
+                <Container
+                    // border="solid green 1px" 
+                    bgColor="#f6f6f4">
+                    <Box w="70%"
+                        // border="solid brown 1px" 
+                        margin="auto" marginBottom="100px">
                         <Flex alignItems="center" textAlign="start" gap="20px">
                             <Box className="succes-stories" fontSize="40px">
                                 <Text >Success stories</Text>
@@ -304,16 +304,16 @@ const MarketingPage = () => {
                 {/* TRENDING */}
 
                 <Container>
-                    <Box w="70%" 
-                    // border="solid brown 1px" 
-                    margin="auto" marginBottom="100px">
+                    <Box w="70%"
+                        // border="solid brown 1px" 
+                        margin="auto" marginBottom="100px">
                         <Box className="succes-stories" fontSize="40px" textAlign="start">
                             <Text >Trending</Text>
                         </Box>
-                        
+
                         <Box className="Market-trending" marginBottom="30px" marginTop="30px">
                             <Box >
-                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80"alt="" />
+                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80" alt="" />
                             </Box>
                             <Box alignItems="center">
                                 <Text fontWeight="600" fontSize="70px">1</Text>
@@ -329,7 +329,7 @@ const MarketingPage = () => {
 
                         <Box className="Market-trending" marginBottom="30px" marginTop="30px">
                             <Box >
-                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80"alt="" />
+                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80" alt="" />
                             </Box>
                             <Box alignItems="center">
                                 <Text fontWeight="600" fontSize="70px">2</Text>
@@ -345,7 +345,7 @@ const MarketingPage = () => {
 
                         <Box className="Market-trending" marginBottom="30px" marginTop="20px">
                             <Box >
-                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80"alt="" />
+                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/6me578ks6G7bDtWuCHqMaJ/a93f4fc016ad0b16aedfa47e02de8515/1Artboard_1-100.jpg?w=760&fm=webp&q=80" alt="" />
                             </Box>
                             <Box alignItems="center">
                                 <Text fontWeight="600" fontSize="70px">3</Text>
@@ -363,34 +363,50 @@ const MarketingPage = () => {
                 </Container>
 
                 <Container border="solid #f6f6f4 1px" bgColor="#f6f6f4">
-                    <Box w="70%" 
-                    // border="solid green 1px" 
-                    margin="auto" >
+                    <Box w="70%"
+                        // border="solid green 1px" 
+                        margin="auto" >
                         <Box className="Marketing-grid" marginTop="70px" marginBottom="70px" gap={20}>
-                        <Box >
-                            <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/7vg67CzZMjTJrhkcpRszYK/d2948672ae49a101b7ac3bd4e10244f7/Inside_the_hype_business_model.png?w=760&fm=webp&q=80" alt="" />
-                        </Box>
+                            <Box >
+                                <Image w="100%" src="https://eep.io/images/yzco4xsimv0y/7vg67CzZMjTJrhkcpRszYK/d2948672ae49a101b7ac3bd4e10244f7/Inside_the_hype_business_model.png?w=760&fm=webp&q=80" alt="" />
+                            </Box>
 
-                        <Box textAlign="start">
-                            <Text fontSize="40px">Inside the "hype" business model</Text>
-                            <Text>Brands are suddenly flocking to street-wear's hype based business model. Here are 10 tips for creating "hype" for your products as part of your holiday marketing plan.</Text>
-                            <div className="Market-button">
-                                <button className="button">
-                                    Read More
-                                </button>
+                            <Box textAlign="start">
+                                <Text fontSize="40px">Inside the "hype" business model</Text>
+                                <Text>Brands are suddenly flocking to street-wear's hype based business model. Here are 10 tips for creating "hype" for your products as part of your holiday marketing plan.</Text>
+                                {/* <div className="Market-button">
+                                    <button className="button">
+                                        Read More
+                                    </button>
+                                </div> */}
 
-                                {/* <a className="A-tag" href="">Log in</a> */}
-                            </div>
-                        </Box>
+                                <Box w="150px" h="50px" bg="black"  borderRadius="50px" marginBottom="100px">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
+                                        Read More
+                                    </Button>
+                                </Box>
+
+
+                            </Box>
                         </Box>
                     </Box>
                 </Container>
 
                 {/* YELLOW DIV */}
 
-                <Container w='100%'
+                <Container
                     border="solid #ffe01b 1px"
-                    bgColor="#ffe01b" marginTop="60px" >
+                    bgColor="#ffe01b" marginTop="60px" marginBottom="30px">
                     <Box margin="auto" marginTop="100px">
                         <Text fontSize="3vw">It’s easy to get started</Text>
                     </Box>
@@ -399,11 +415,21 @@ const MarketingPage = () => {
                         <Text fontSize="2vw" fontWeight="300">And it’s free. Two things everyone loves.</Text>
                     </Box>
 
-                    <div className="Last-button">
-                        <button className="button">
+                    <Box w="150px" h="50px" bg="black" margin="auto" borderRadius="50px" marginBottom="100px">
+                        <Button
+                            className="Marketing-btn-buy"
+                            display="block"
+                            margin="auto"
+                            w="100%"
+                            h="100%"
+                            mb="50px"
+                            bg="#FFE01B"
+                            border="1px solid black"
+                            borderRadius="50px"
+                        >
                             Sign Up
-                        </button>
-                    </div>
+                        </Button>
+                    </Box>
                 </Container>
             </Container>
         </div>

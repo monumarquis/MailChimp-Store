@@ -3,6 +3,7 @@ import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPane
 import { useState } from "react";
 import { FaChevronRight, FaArrowRight, FaAngleDown, FaAngleUp, FaPlusCircle } from "react-icons/fa";
 import "./MailChimp.css";
+// import "./MarketingPage.css";
 import ResourcesNavbar from "./ResourcesNavbar";
 
 const MailChimp = () => {
@@ -70,9 +71,22 @@ const MailChimp = () => {
                                 </div>
 
                                 <div className="boom-MailChimp5-button">
-                                    <button className="button">
+                                    {/* <div className="boom-MailChimp9-button"> */}
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        position="-moz-initial"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
                                         Get Started
-                                    </button>
+                                    </Button>
+                                    {/* </div> */}
                                 </div>
                             </div>
 
@@ -121,7 +135,7 @@ const MailChimp = () => {
 
                 </Container>
 
-                {/* ID-7 */}
+                {/* ID-7  CONTACT */}
 
                 <Container width="100%"
                     // border="solid red 1px" 
@@ -142,15 +156,28 @@ const MailChimp = () => {
                                     <Text>Let people sign up for your marketing with a landing page.</Text>
                                 </Box>
 
-                                <div className="boom-MailChimp7-button">
-                                    <button className="button">
+                                <Box className="boom-MailChimp7-button" w="80%">
+                                    <Button
+                                        position="-moz-initial"
+                                        bgColor="black"
+                                        // border-radius: 30px;
+                                        className="Marketing-btn-buy"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
                                         Create A Landing Page
-                                    </button>
+                                    </Button>
 
                                     <a href="https://mailchimp.com/features/landing-pages/">
                                         Learm More About Landing Page
                                     </a>
-                                </div>
+                                </Box>
                             </Box>
                         </Flex>
                     </Box>
@@ -366,11 +393,28 @@ const MailChimp = () => {
                                 <p>Even if you don’t have contacts to market to yet, you can always log in and start playing around with our design tools. In fact, we recommend it.</p>
                             </div> */}
 
-                                <div className="boom-MailChimp9-button">
+                                {/* <div className="boom-MailChimp9-button">
                                     <button className="button">
                                         See What's Possible
                                     </button>
+                                </div> */}
+
+                                <div className="boom-MailChimp9-button">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
+                                        See What's Possible
+                                    </Button>
                                 </div>
+
                             </div>
 
                         </div>
@@ -429,9 +473,19 @@ const MailChimp = () => {
                                 </div>
 
                                 <div className="boom-MailChimp9-button">
-                                    <button className="button">
+                                    <Button
+                                        className="Marketing-btn-buy"
+                                        display="block"
+                                        margin="auto"
+                                        w="100%"
+                                        h="100%"
+                                        mb="50px"
+                                        // bg="#FFE01B"
+                                        border="1px solid black"
+                                        borderRadius="50px"
+                                    >
                                         Explore the directory
-                                    </button>
+                                    </Button>
                                 </div>
                             </div>
 
@@ -531,9 +585,9 @@ const MailChimp = () => {
 
                 </Container>
 
-                <Container w='100%'
+                <Container
                     border="solid #ffe01b 1px"
-                    bgColor="#ffe01b" marginTop="60px" >
+                    bgColor="#ffe01b" marginTop="60px" marginBottom="30px">
                     <Box margin="auto" marginTop="100px">
                         <Text fontSize="3vw">It’s easy to get started</Text>
                     </Box>
@@ -542,11 +596,21 @@ const MailChimp = () => {
                         <Text fontSize="2vw" fontWeight="300">And it’s free. Two things everyone loves.</Text>
                     </Box>
 
-                    <div className="Last-button">
-                        <button className="button">
+                    <Box w="150px" h="50px" bg="black" margin="auto" borderRadius="50px" marginBottom="100px">
+                        <Button
+                            className="Marketing-btn-buy"
+                            display="block"
+                            margin="auto"
+                            w="100%"
+                            h="100%"
+                            mb="50px"
+                            bg="#FFE01B"
+                            border="1px solid black"
+                            borderRadius="50px"
+                        >
                             Sign Up
-                        </button>
-                    </div>
+                        </Button>
+                    </Box>
                 </Container>
 
             </div>

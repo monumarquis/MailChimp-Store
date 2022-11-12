@@ -6,6 +6,8 @@ import HelpCenterPage from './ResourcesPages/HelpCenterPage';
 import MailChimp from './ResourcesPages/MailChimp101';
 import MarketingPage from './ResourcesPages/MarketingPage';
 import ResourcesNavbar from './ResourcesPages/ResourcesNavbar';
+import StoreHomePage from './StorePage/StoreHomePage';
+import StoreSetUp from './StorePage/StoreSetUp';
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
       {/* <MailChimp/> */}
       {/* <ResourcesNavbar/> */}
       {/* <HelpCenterPage/> */}
-      <MarketingPage/>
-      {/* <Accor/> */}
+      {/* <MarketingPage/> */}
+      {/* <StoreHomePage/> */}
+      <StoreSetUp/>
     </div>
   );
 }

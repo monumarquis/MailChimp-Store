@@ -4,6 +4,7 @@ import { BsArrowUpRight, BsArrowRight } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 import "./MarketingPage.css";
 import "./MailChimp.css";
+
 import ResourcesNavbar from "./ResourcesNavbar";
 
 
@@ -379,7 +380,7 @@ const MarketingPage = () => {
                                     </button>
                                 </div> */}
 
-                                <Box w="150px" h="50px" bg="black" borderRadius="50px" marginBottom="100px">
+                                <Box w="150px" h="50px" bg="black"  borderRadius="50px" marginBottom="100px">
                                     <Button
                                         className="Marketing-btn-buy"
                                         display="block"

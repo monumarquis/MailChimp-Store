@@ -6,6 +6,14 @@ import HelpCenterPage from './ResourcesPages/HelpCenterPage';
 
 
 import Home from "./myHome/Home"
+
+import PriceComp from './myHome/PriceComp';
+function App() {
+  return (
+    <div className="App">
+ <Home/>
+       <PriceComp/>
+
 import MailChimp from './ResourcesPages/MailChimp101';
 import MarketingPage from './ResourcesPages/MarketingPage';
 import ResourcesNavbar from './ResourcesPages/ResourcesNavbar';
@@ -26,6 +34,7 @@ function App() {
 
  
        <Home/>
+
      
       
 

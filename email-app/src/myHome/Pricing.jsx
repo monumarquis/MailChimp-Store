@@ -1,18 +1,16 @@
 import { Box, Text, Heading,Button } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+// import { useState } from "react";
 import "./pricing.style.css";
 function Pricing() {
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
+  // const handleMouseEnter = () => {
+  //   setIsHovering(true);
+  // };
 
-
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovering(false);
+  // };
 
   return (
     <Box bg="#f6f6f4" pb="80px">
@@ -253,14 +251,28 @@ function Pricing() {
         {/* -------4--------- */}
       </Box>
       <Text fontSize={12} mt="20px" textAlign="center">*Overages apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
-    <Button display="block" margin="auto" mt="50px" border="1px solid black" bg="#ffe01b" borderRadius={50} height="50px" width="200px" fontWeight={0} className="plan-btn"  style={{
+    {/* <Button display="block" margin="auto" mt="50px" border="1px solid black" bg="#ffe01b" borderRadius={50} height="50px" width="200px" fontWeight={0} className="plan-btn"  style={{
             borderBottom: isHovering ? "6px solid black" : "",
+            paddingBottom: isHovering ? "6px" : "",
             background: isHovering ? "#ffe01b" : "",
-            transition: isHovering ? "0.1s" : "",
+            transition: isHovering ? "0.3s" : "",
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-           >See all plan Details</Button>
+           >See all plan Details</Button> */}
+<Box w="200px" h="50px" borderRadius="50px" bg="black" margin="auto" mt="50px">
+          <Button
+            className="btn-signup"
+            w="100%"
+            h="50px"
+            borderRadius="50px"
+            background="#ffe01b"
+            border="1px solid black"
+          >
+          See all plan Details
+          </Button>
+          </Box>
+
     </Box>
   );
 }

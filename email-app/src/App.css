@@ -1,4 +1,8 @@
 
+
+*{
+    font-family:  Means Web,Georgia,Times,Times New Roman,serif;
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -37,4 +41,5 @@
 .button:hover{
   /* margin-bottom: 4px; */
   border-bottom: solid black 7px;
+
 }

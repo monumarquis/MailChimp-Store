@@ -5,8 +5,8 @@ import PriceComp from './myHome/PriceComp';
 function App() {
   return (
     <div className="App">
- {/* <Home/> */}
-       {/* <PriceComp/> */}
+ <Home/>
+       <PriceComp/>
      
       
     </div>

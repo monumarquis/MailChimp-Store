@@ -25,13 +25,13 @@ import { TbWorld } from "react-icons/tb";
 function Navbar(){
     const { isOpen, onOpen, onClose } = useDisclosure();
     const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('teal.400', 'white');
+    const linkHoverColor = useColorModeValue('teal.600', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
 
   return (
     <>
-      <Box bg={useColorModeValue('white.100', 'white.900')} px={4}>
+      <Box mb={20} bg={"white"} px={4} as="header" position="fixed" w="100%" >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -56,7 +56,7 @@ function Navbar(){
                 p={2}
                 href={navItem.href ?? '#'}
                 fontSize={'sm'}
-                fontWeight={500}
+                fontWeight={'bold'}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',
@@ -149,7 +149,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'teal.400' }}
+            _groupHover={{ color: 'teal.600' }}
             fontWeight={500}>
             {label}
           </Text>
@@ -163,7 +163,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           justify={'flex-end'}
           align={'center'}
           flex={1}>
-          <Icon color={'teal.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'teal.500'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>

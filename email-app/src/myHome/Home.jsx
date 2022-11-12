@@ -107,7 +107,7 @@ const Autometion2 = [
 ];
 
 function Home() {
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
   const [gridData] = useState(Data);
   const [auto] = useState(Autometion1);
   const [auto2] = useState(Autometion2);
@@ -119,13 +119,13 @@ function Home() {
     "Generate up to 4x more orders* with Customer Journey Builder automations";
   const heading2 =
     "Get up to 88% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments";
-  const handleMouseEnter = () => {
-    setIsHovering(true);
-  };
+  // const handleMouseEnter = () => {
+  //   setIsHovering(true);
+  // };
 
-  const handleMouseLeave = () => {
-    setIsHovering(false);
-  };
+  // const handleMouseLeave = () => {
+  //   setIsHovering(false);
+  // };
 
   return (
     <Box w="100%" height="auto">
@@ -157,7 +157,7 @@ function Home() {
           Win new customers with the #1 email marketing and automations brand*
           that recomends ways to get more opens, clicks and sales.
         </Text>
-        <Button
+        {/* <Button
           className="btn-signup"
           display="block"
           margin="auto"
@@ -170,14 +170,27 @@ function Home() {
           bg="#ffe01b"
           style={{
             borderBottom: isHovering ? "6px solid black" : "",
+            paddingBottom: isHovering ? "6px" : "",
             background: isHovering ? "#ffe01b" : "",
-            transition: isHovering ? "0.1s" : "",
+            transition: isHovering ? "0.3s" : "",
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           Sign Up
-        </Button>
+        </Button> */}
+        <Box w="120px" h="50px" borderRadius="50px" bg="black" margin="auto" mt="30px">
+          <Button
+            className="btn-signup"
+            w="100%"
+            h="50px"
+            borderRadius="50px"
+            background="#ffe01b"
+            border="1px solid black"
+          >
+            Sign Up
+          </Button>
+          </Box>
       </Box>
 
       {/* gird section  */}

@@ -1,0 +1,159 @@
+.price-C{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+   width: 70%;
+   height: auto;
+   margin: auto;
+   margin-top: 150px;
+   background-color: white;
+
+}
+.price-section1 , .price-section2 ,.price-section3{
+    padding: 15%;
+    border: 1px solid;
+}
+.price-section1{
+    border: 1px solid;
+}
+.price-section2{
+    border-right: none;
+    border-left: none;
+}
+
+.price-section1:hover , .price-section2:hover , .price-section3:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border: 1px solid;
+}
+.price-section2:hover {
+    border-right: none;
+    border-left: none;
+}
+
+.btn-buy{
+  
+transition: .4s ease-out;
+}
+.btn-buy:hover{
+    transform: translateY(-8px);
+    background-color: "#ffe01b";
+}
+.marketing-tool{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    padding:5% ;
+    /* padding-right: 5%;
+    padding-left: 5%; */
+    gap: 30px;
+}
+.search-feature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+gap: 25px;
+
+}
+.search-inp{
+    font-size: 35px;
+}
+.hero-google{
+    display: grid;
+    grid-template-columns: repeat( 2,1fr) ;
+    grid-template-rows: auto;
+    gap: 0px;
+
+}
+.search-inp::placeholder{
+    font-size: 35px;
+}
+.templet{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.templet-2{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    width: 70%;
+    
+}
+.bl{
+    border-right: 1px solid black;
+}
+.accordion{
+    width: 60%;
+}
+@media screen and (max-width:990px){
+    .price-C{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    gap: 25px;
+    }
+    .price-section2{
+border: 1px solid black;
+    }
+
+    .marketing-tool{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+    .search-feature{
+        display: flex;
+        flex-direction: column-reverse;
+       
+    gap: 25px;
+    
+    }
+    .hero-google{
+        display:flex;
+      flex-direction: column-reverse;
+        gap: 20px;
+    
+    }
+    .templet{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width: 80%;
+        height: auto;
+        background-color: white;
+        padding-top: 120px;
+        padding-bottom: 80px;
+       
+    }
+    .bl{
+        border-right: none;
+        
+
+    }
+
+    .templet-2{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width: 70%;
+        
+    }
+
+    .accordion{
+        width: 90%;
+    }
+}

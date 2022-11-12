@@ -1,0 +1,72 @@
+.gridData {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin-top: 80px;
+
+
+}
+
+.videoplayer {
+
+    height: 100%;
+    width: 100%;
+}
+
+.btn-signup {
+    transition: .2s ease-out;
+    
+}
+
+.btn-signup:hover {
+    transform: translateY(-10px);
+}
+.mobile{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    background-color:#e7b75f;
+}
+.Learn{
+    font-size: 20px;
+    width: 190px;
+    border-radius: 50px;
+    padding: 10px;
+    transition: .4s ease-out;
+    text-align: center;
+    margin-top: 15px;
+}
+.Learn:hover{
+    background-color: yellow;
+transform: translateX(10px);
+cursor: pointer;
+}
+@media screen and (max-width:990px) {
+    .mobile{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    .lapmob{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .gridData {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .gridData {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+}

@@ -1,0 +1,13 @@
+
+.btn-buy{
+    transition: .4s ease-out;
+    cursor: pointer;
+    }
+
+.btn-buy:hover{
+        transform: translateY(-5px);
+        background-color: chocolate;
+}
+*{
+    font-family:  Means Web,Georgia,Times,Times New Roman,serif;
+}

@@ -1,0 +1,424 @@
+
+
+.MailChimp{
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+}
+.First{
+    width: 48%;
+}
+.boom-MailChimp1{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boom-MailChimp2{
+    display: flex;
+}
+
+.boom-MailChimp2 > div{
+    margin: auto;
+    /* border: solid red 1px; */
+    width: 48%;
+}
+
+.boom-MailChimp3>img{
+    /* border: solid brown 1px; */
+    margin-left: 70px;
+    width: 80%;
+}
+
+.boom-MailChimp4>div>h1{
+    text-align: start;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.boom-MailChimp4>div>p{
+    text-align: start;
+    font-weight: 300;
+    font-size: 1.37vw;
+}
+
+.boom-MailChimp5-button{
+    width: 24%;
+    height:50px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+/* .boom-MailChimp5-button>button{
+    width: 80%;
+    cursor: pointer;
+    padding: 15px;
+    box-sizing: 25px;
+    border-radius: 30px;
+} */
+
+.boom-MailChimp6{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    /* border: solid brown 1px; */
+    margin-top: 120px;
+    margin-bottom: 100px
+}
+.boom-MailChimp6>div{
+    width: 49%;
+}
+
+.boom-MailChimp-6A>h1{
+    width: 70%;
+    /* border: solid yellow 1px; */
+    text-align: start;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.boom-MailChimp-6B>div{
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.Text{
+    margin-top: 7px;
+}
+.border-bottom{
+    margin-top: 5px;
+    border-bottom: solid black 1px;
+}
+.boom-MailChimp-6B>div>h2{
+    font-size: medium;
+    font-weight: 500;
+    text-align: start;
+}
+
+.boom-MailChimp-Arrow{
+    /* border: solid red 1px; */
+    width: 6%;
+    height: 30px;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 20px;
+}
+.boom-MailChimp-6B>div:hover{
+    /* margin: 2px; */
+    background-color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ID - 7 */
+
+.boom-MailChimp7-button{
+    display: flex;
+    /* width: 75%; */
+    /* height:50px; */
+    /* gap: 10px; */
+    
+    
+}
+
+.boom-MailChimp7-button>button{
+    width: 50%;
+    cursor: pointer;
+    padding: 15px;
+    /* box-sizing: 25px; */
+    border-radius: 30px;
+    background-color: yellow;
+}
+.boom-MailChimp7-button>a{
+    color: black;
+    font-size: 1vw;
+}
+.boom-MailChimp7-button>a:hover{
+    color: rgb(248, 248, 9);
+}
+
+/* ID - 8 */
+
+.boom-MailChimp-8>div>h1{
+    text-align: start;
+    font-weight: 500;
+    font-size: 3vw;
+}
+.boom-MailChimp-8-Text{
+    font-size: 2vw;
+}
+
+.boom-MailChimp-8-Text:hover{
+    color: teal;
+}
+
+/* ID - 9 */
+
+.Colur-div{
+    display: flex;
+}
+.Colour-div-box1{
+    width: 30%;
+}
+.Colour-div-box2{
+    width: 70%;
+}
+
+.boom-MailChimp9-A>div>h1{
+    text-align: start;
+    font-weight: 500;
+    font-size: 2.4vw;
+}
+.boom-MailChimp9-A>div>p{
+    text-align: start;
+    font-weight: 300;
+    font-size: 1.37vw;
+}
+
+.boom-MailChimp9-button{
+    width: 40%;
+    height:50px;
+    background-color: black;
+    border-radius: 30px;
+}
+/* .boom-MailChimp9-button>button{
+    width: 80%;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+} */
+
+.boom-MailChimp9{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    /* border: solid brown 1px; */
+    margin-top: 120px;
+    margin-bottom: 100px
+}
+.boom-MailChimp9>div{
+    width: 49%;
+}
+
+.boom-MailChimp-9A>h1{
+    width: 80%;
+    /* border: solid yellow 1px; */
+    text-align: start;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 10px;
+}
+.boom-MailChimp-game{
+    width: 45%;
+    /* border: solid 1px red; */
+    margin-bottom: 100px;
+}
+.boom-MailChimp-Learn{
+    display: flex;
+    border-top: solid black 1px;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    padding: 30px;
+}
+.boom-MailChimp-Learn>div:hover{
+    cursor: pointer;
+    border-bottom: solid black 1px;
+}
+.boom_MailChimp-Last{
+    display: flex;
+    /* border: solid red 1px; */
+    margin: auto;
+    /* justify-content: spa; */
+}
+
+/* ID - LAST */
+.Last1{
+    margin: auto;
+    width: 50%;
+    /* border: solid red 1px; */
+}
+.Last1>img{
+    width: 80%;
+}
+.Last2{
+    margin: auto;
+    width: 50%;
+    /* border: solid red 1px; */
+    text-align: start;
+    
+}
+.Last2>h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.Last2>p{
+    width: 80%;
+    font-size: 1.2vw;
+}
+.Last-button{
+    margin: auto;
+    width: 10%;
+    height:70px;
+    margin-bottom: 100px;
+}
+.Last-button>button{
+    width: 80%;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #ffe01b;
+}
+
+.Marketing-btn-buy{
+    transition: .4s ease-out;
+    }
+.Marketing-btn-buy:hover{
+    transform: translateY(-8px);
+    /* background-color: "#FFE01B"; */
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .MailChimp{
+        width: 100%;
+    }
+
+    .First{
+        width: 90%;
+    }
+    .boom-MailChimp2{
+        display: grid;
+    }
+    .boom-MailChimp2 > div{
+        width: 90%;
+        margin: auto;
+    }
+    .boom-MailChimp4>div>p{
+        text-align: start;
+        font-weight: 300;
+        font-size: 2.7vw;
+    }
+    .boom-MailChimp5-button{
+        width: 50%;
+        height:40px;
+    }
+
+    .boom-MailChimp5-button>button{
+        width: 60%;
+        padding: 2px;
+    }
+    .button{
+        font-size: 1.5vw;
+    }
+
+    .boom-MailChimp6{
+        display: grid;
+        width: 90%;
+    }
+
+    .boom-MailChimp6>div{
+        width: 90%;
+    }
+
+    .boom-MailChimp-6A>h1{
+        width: 100%;
+        font-size: 2.5vw;
+    }
+
+    .boom-MailChimp7-button{
+        width: 90%;
+    }
+    .boom-MailChimp7-button>a{
+        font-size: 0.7vw;
+        margin-top: 10px;
+    }
+    
+    .boom-MailChimp-8-Text{
+        font-size: 3vw;
+    }
+
+    .boom-MailChimp9>div>p{
+        text-align: start;
+        font-weight: 300;
+        font-size: 2vw;
+    }
+    .boom-MailChimp9{
+        display: grid;
+        width: 90%;
+    }
+
+    .boom-MailChimp9>div{
+        width: 90%;
+    }
+
+    .boom-MailChimp-9A>h1{
+        width: 100%;
+        font-size: 2.5vw;
+    }
+
+    .boom-MailChimp-game{
+        width: 85%;
+    }
+    .Last-button{
+        margin: auto;
+        width: 20%;
+        height:70px;
+        margin-bottom: 100px;
+    }
+    .boom-MailChimp9-button{
+        width: 30%;
+        height:50px;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+  }
+
+  @media screen and (max-width: 700px){
+
+    .MailChimp{
+        width: 100%;
+    }
+    .Colur-div{
+        display: grid;
+    }
+    .Colour-div-box1{
+        width: 80%;
+        margin: auto;
+    }
+    .Colour-div-box2{
+        width: 80%;
+        margin: auto;
+    }
+
+    .boom-MailChimp5-button{
+        width: 50%;
+        height: 10px;
+    }
+    
+    .boom-MailChimp5-button>button{
+        width: 80%;
+        cursor: pointer;
+        padding: 1px;
+    }
+    .button{
+        font-size: 1.5vw;
+    }
+    .boom-MailChimp9-button{
+        width: 70%;
+        height:50px;
+        background-color: black;
+        border-radius: 30px;
+    }
+  }
+

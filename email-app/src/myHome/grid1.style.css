@@ -1,7 +1,0 @@
-.grid-Image{
-    transition: .4s ease-out;
-}
-.grid-Image:hover{
- transform: translateY(-8px);  
- cursor: pointer;
-}

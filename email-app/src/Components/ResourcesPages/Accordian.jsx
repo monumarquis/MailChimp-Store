@@ -1,6 +1,7 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from "@chakra-ui/react";
 
 
+
 const Accor = () => {
     return (
         <div>

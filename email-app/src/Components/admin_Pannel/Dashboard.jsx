@@ -22,12 +22,18 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  import { NavLink } from "react-router-dom"
-  // import Logo from "../Assets/logo.png"
+  import { NavLink, useNavigate } from "react-router-dom";
+import { logout } from '../../firebase-config';
+
   // /Assets/Logo.png"
 
   export default function DashBoard() {
     const { isOpen, onToggle } = useDisclosure();
+    const Navigate = useNavigate();
+    const handlelogout = () =>{
+     logout();
+     Navigate("/emarketing");
+    }
   
     return (
       <Box
@@ -87,9 +93,10 @@ import {
               bg="#FFE01B"
               border="1px solid black"
               borderRadius="50px"
-              
+              onClick={handlelogout}
               >
-              Log out
+                Log Out 
+             {/* <NavLink to='/'> Log out  </NavLink> */}
             </Button>
           </Stack>
         </Flex>

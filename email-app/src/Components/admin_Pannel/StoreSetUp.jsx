@@ -3,16 +3,16 @@
 import { Box, Button, Container, Flex, FormControl, FormLabel, Image, Input, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { BsCart } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import "./StoreSetUp.css";
 const StoreSetUp = () => {
-    const [bussinesname, setbussiness] =useState("")
+    const [bussinesname, setbussiness] =useState("");
+    const [name,setname]= useState("");
     const data = JSON.parse(localStorage.getItem("users_data"));
     console.log(data);
-    // if(data.state){
-    //     return(
-    //         <h1> Hello </h1>
-    //     )
-    // }
+    const handlesubmit = () =>{
+        setname(bussinesname)
+    }
     return (
         <div>
 
@@ -42,11 +42,16 @@ const StoreSetUp = () => {
                             <Box margin="auto" marginBottom="20px" textAlign='start' marginTop="30px">
                                 <Button 
                                 position="-moz-initial"
-                                className="store-button" border="none" padding="15px 30px 15px 30px" color='white' bgColor="teal" size='sm'> Continue</Button>
+                                onClick={handlesubmit}
+                                className="store-button" border="none"
+                                 padding="15px 30px 15px 30px" color='white' bgColor="teal"
+                                  size='sm'> Continue
+                                </Button>
+
                             </Box>
                         </Box>
 
-                        <Box textAlign="start" border="solid gray 1px" boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px">
+        <Box textAlign="start" border="solid gray 7px" boxShadow=" rgba(0, 0, 0, 0.24) 0px 3px 8px">
 
                             {/* Need to fix with backend code */}
                             <Box borderBottom="solid 1px gray" marginTop="50px">
@@ -59,7 +64,7 @@ const StoreSetUp = () => {
 
                                 {/* Need to fix with backend code */}
                                 {/* Need to fix with backend code */}
-                            <Text fontWeight='bold' pl='3%'> {bussinesname}</Text>
+                            <Text fontWeight='bold' pl='3%'> {name}</Text>
                                 <Box fontSize="25px" paddingRight="20px"><BsCart />
                                 
                                 </Box>
@@ -67,35 +72,61 @@ const StoreSetUp = () => {
                             </Flex>
                             <Box className="StoreSetUp-2" padding="20px" marginTop="-30px">
                                 <Box>
-                                    <Box border="dotted gray 1px" height="120px"></Box>
-                                    <Box w="80%" border="dotted gray 1px" height="20px" marginTop="20px">
+                                    <Box 
+                                    w="250px" 
+                                    // border="5px solid" 
+                                    height="20px" marginTop="20px">
+                                        <Text> Product</Text>
                                         <img  src={data.product_url == "" ? "" : data.product_url }/>
                                     </Box>
-                                    <Box w="30%" border="dotted gray 1px" height="20px" marginTop="20px"></Box>
+                                    {/* <Box w="30%" border="dotted gray 1px" height="20px" marginTop="20px"></Box> */}
                                 </Box>
 
                                 <Box>
-                                    <Box border="dotted gray 1px" height="120px"></Box>
-                                    <Box w="80%" border="dotted gray 1px" height="20px" marginTop="20px">
-                                        <Text> {data.description =="" ? "" : data.description}</Text>
+                                <Box w="80%"  height="20px" marginTop="20px">
+                                        
+                                </Box>
+                                    <Box  height="120px" w= "150px" ml="5%">
+                                        <Text fontWeight='bold'> {`Name : ${data.name =="" ? "" : data.name}`}</Text>
+                                        <Text fontWeight='bold'> {` Price : ${data.price == "" ? "" : data.price}`}</Text>
+                                        <Text fontWeight='bold'> {` Quantity : ${data.Qty == "" ? "" : data.Qty}`}</Text>
+                                        <Text fontWeight='bold'> {` Description : ${data.description == "" ? "" : data.description}`}</Text>
+     
+                                       
+                                        {/* <Text> {data.}</Text> */}
                                     </Box>
-                                    <Box w="30%" border="dotted gray 1px" height="20px" marginTop="20px"></Box>
+                                    
+                                    {/* <Box w="30%" border="dotted gray 1px" height="20px" marginTop="20px"></Box> */}
                                 </Box>
 
-                                <Box>
+                                {/* <Box>
                                     <Box border="dotted gray 1px" height="120px"></Box>
                                     <Box w="80%" border="dotted gray 1px" height="20px" marginTop="20px">
-                                        <Text> {data.name =="" ? "" : data.name}</Text>
+                                        
                                     </Box>
                                     <Box w="30%" border="dotted gray 1px" height="20px" marginTop="20px">
-                                        <Text> {data.price == "" ? "" : data.price}</Text>
+                                        
                                     </Box>
-                                </Box>
+                                </Box> */}
 
                             </Box>
                         </Box>
                     </Box>
                 </Box>
+                <Button 
+                textAlign='center'
+                position="-moz-initial"
+                // className="store-button"
+                ml='25%'
+                 border="none"
+                padding="15px 30px 15px 30px"
+                 color='white' bgColor="teal"
+                size='sm'> 
+                <Link         
+                to='/store'> Add More Products </Link>
+                </Button>
+                                
+                
             </Container>
         </div>
     )

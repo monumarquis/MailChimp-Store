@@ -57,11 +57,21 @@ export const Display = ({productDesc,productName,productImage,productPrice}) =>{
         {/* This is add to cart button  */}
         <Button zIndex={0} pos="-moz-initial" mt="10" colorScheme='orange' variant='solid' ml="-20px"
         onClick={handlesubmit}>Add to cart</Button>
-        <Link to='/storesetup'> Store Page </Link>
+        
     
         </Box>
       </HStack>
       </Container>
+      <Button 
+                textAlign='center'
+                position="-moz-initial"
+                ml='25%'
+                 border="none"
+                padding="15px 30px 15px 30px"
+                 color='white' bgColor="teal"
+                size='sm'> 
+                <Link to='/storesetup'> Store Page </Link>
+                </Button>
      </VStack>
     )
 }

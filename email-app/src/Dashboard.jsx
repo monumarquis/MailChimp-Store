@@ -22,11 +22,18 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  import { NavLink } from "react-router-dom"
+  import { Navigate, NavLink, useNavigate } from "react-router-dom"
   import Logo from "./Assets/Logo.png"
+import { useSelector } from 'react-redux';
+
+
   export default function DashBoard() {
     const { isOpen, onToggle } = useDisclosure();
-  
+    const navigate = useNavigate();
+   const auth = useSelector((store) => store.store.isAuth);
+    const handlelogout = () =>{
+      auth ? navigate("/adminhome") : navigate("/")
+    }
     return (
       <Box
        pos='sticky'
@@ -85,7 +92,7 @@ import {
               bg="#FFE01B"
               border="1px solid black"
               borderRadius="50px"
-              
+              onClick={handlelogout}
               >
               Log out
             </Button>

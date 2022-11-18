@@ -45,19 +45,17 @@
 }
 
 .boom-MailChimp5-button{
-    width: 24%;
+    width: 33%;
     height:50px;
     background-color: black;
     border-radius: 30px;
 }
 
-/* .boom-MailChimp5-button>button{
-    width: 80%;
+.boom-MailChimp5-button>button{
+    
     cursor: pointer;
-    padding: 15px;
-    box-sizing: 25px;
-    border-radius: 30px;
-} */
+   font-size: 16px;
+}
 
 .boom-MailChimp6{
     display: flex;
@@ -121,20 +119,21 @@
 
 .boom-MailChimp7-button{
     display: flex;
-    /* width: 75%; */
+    width: 75%;
     /* height:50px; */
-    /* gap: 10px; */
+    gap: 10px;
     
     
 }
 
 .boom-MailChimp7-button>button{
-    width: 50%;
+    /* width: 50%; */
     cursor: pointer;
     padding: 15px;
     /* box-sizing: 25px; */
     border-radius: 30px;
     background-color: yellow;
+    /* font-size: 1.5vw; */
 }
 .boom-MailChimp7-button>a{
     color: black;
@@ -183,17 +182,15 @@
 }
 
 .boom-MailChimp9-button{
-    width: 40%;
+    width: 50%;
     height:50px;
     background-color: black;
     border-radius: 30px;
 }
-/* .boom-MailChimp9-button>button{
-    width: 80%;
+.boom-MailChimp9-button>button{
     cursor: pointer;
-    padding: 15px;
-    border-radius: 30px;
-} */
+    font-size: 16px;
+}
 
 .boom-MailChimp9{
     display: flex;
@@ -309,13 +306,12 @@
         font-size: 2.7vw;
     }
     .boom-MailChimp5-button{
-        width: 50%;
+        width: 40%;
         height:40px;
     }
 
     .boom-MailChimp5-button>button{
-        width: 60%;
-        padding: 2px;
+        font-size: 16px;
     }
     .button{
         font-size: 1.5vw;
@@ -338,8 +334,11 @@
     .boom-MailChimp7-button{
         width: 90%;
     }
+    .boom-MailChimp7-button>Button{
+        font-size: 1.4vw;
+    }
     .boom-MailChimp7-button>a{
-        font-size: 0.7vw;
+        font-size: 1.1vw;
         margin-top: 10px;
     }
     
@@ -376,10 +375,23 @@
         margin-bottom: 100px;
     }
     .boom-MailChimp9-button{
-        width: 30%;
+        width: 50%;
         height:50px;
         background-color: black;
         border-radius: 30px;
+    }
+    .boom-MailChimp9-button>Button{
+        font-size: 17px;
+        
+    }
+    .Colur-div{
+        display: flex;
+    }
+    .Colour-div-box1{
+        width: 60%;
+    }
+    .Colour-div-box2{
+        width: 60%;
     }
 
   }
@@ -400,25 +412,45 @@
         width: 80%;
         margin: auto;
     }
+    .Colour-div-box2>Text{
+        /* width: 20%; */
+        margin: auto;
+        font-size: 16px;
+    }
 
     .boom-MailChimp5-button{
-        width: 50%;
-        height: 10px;
+        width: 60%;
+        height: 50px;
     }
     
     .boom-MailChimp5-button>button{
-        width: 80%;
         cursor: pointer;
-        padding: 1px;
+        font-size: 2.3vw;
     }
     .button{
         font-size: 1.5vw;
     }
+    .boom-MailChimp7-button{
+        width: 100%;
+    }
+    .boom-MailChimp7-button>Button{
+        font-size: 1vw;
+        cursor: pointer;
+    }
+    .boom-MailChimp7-button>a{
+        font-size: 1.1vw;
+        margin-top: 10px;
+    }
     .boom-MailChimp9-button{
-        width: 70%;
+        width: 60%;
         height:50px;
         background-color: black;
         border-radius: 30px;
+        
+    }
+    .boom-MailChimp9-button>Button{
+        font-size: 2.2vw;
+        cursor: pointer;
     }
   }
 

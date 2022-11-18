@@ -24,15 +24,13 @@ const AllRoutes = () => {
         <Route path='/adminhome' element={<AdminHome/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
-        <Route path='/' element={
-        <Home/>
-        }></Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/mailchimp101' element={<MailChimp/>}></Route>
         <Route path='/marketing' element={<MarketingPage/>}></Route>
         <Route path='/helpcenter' element={<HelpCenterPage/>}></Route>
         <Route path='/emarketing' element={<EmailMarketing/>}></Route> 
         <Route path='/pricing' element={<PriceComp/>}></Route>
-        <Route path='/adminpannel' element={<DashBoard />}></Route>
+        <Route path='/adminpannel' element={<AdminHome />}></Route>
         <Route path='/storesetup'element={<StoreSetUp />}></Route>
             </Routes>
     </div>

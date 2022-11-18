@@ -18,23 +18,22 @@ import {
   import {useSelector , useDispatch} from 'react-redux';
   import { userEmail} from '../../Redux/actions'
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
   
 export default function Login() {
 
-  const userReduxEmail = useSelector( store => store.isAuth);
-    console.log("redux data",userReduxEmail );
-
+  const auth  = useSelector((store)=> store.isAuth );
     const dispatch = useDispatch();
 
     const [loading,setloading]=useState(false);
     const [userNotFound,setuserNotFount]=useState(false);
+    
     const emailRef=useRef();
     const passwordRef=useRef();
     const usenavigate=useNavigate()
 
     async function signin(){
       setloading(true)
-
       dispatch( userEmail(emailRef.current.value));
       try{
           await login(emailRef.current.value,passwordRef.current.value)
@@ -49,8 +48,7 @@ export default function Login() {
       }
       setloading(false)
   }
-  console.log(userReduxEmail);
-
+  
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} bg="#ffe01b">
         <Flex px={2} >

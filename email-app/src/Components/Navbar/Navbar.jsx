@@ -95,7 +95,9 @@ function Navbar(){
             </Flex>
             <Box display={{ base: 'none', md: 'inline-flex' }} ><Navlink to="/homepage"><Icon as={TbWorld} w={6} h={6}/></Navlink></Box>
             <Button display={{ base: 'none', md: 'inline-flex' }} ><Search2Icon /></Button>
-            <NavLink to="/login"><Box w={{base:"80px",md:"100px",lg:"120px"}} h={{base:"34px",md:"40px",lg:"45px"}} borderRadius="50px" bg="black" margin="auto">
+            <NavLink to="/login">
+              <Box w={{base:"80px",md:"100px",lg:"120px"}} h={{base:"34px",md:"40px",lg:"45px"}} 
+              borderRadius="50px" bg="black" margin="auto">
           <Button
             className="btn-signup"
             w="100%"
@@ -106,7 +108,7 @@ function Navbar(){
             pos="-moz-initial"
             fontSize={{base:"15px",md:"16px",lg:"17px"}}
           >
-Log in
+        Log in
           </Button>
           </Box></NavLink>
             <NavLink to="/signup"><Box w={{base:"80px",md:"100px",lg:"120px"}} h={{base:"34px",md:"40px",lg:"45px"}} borderRadius="50px" bg="black" margin="auto" >

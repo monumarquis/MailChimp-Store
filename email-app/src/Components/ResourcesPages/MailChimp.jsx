@@ -78,7 +78,7 @@ const MailChimp = () => {
                                         w="100%"
                                         h="100%"
                                         mb="50px"
-                                      mt="10"
+                                        mt="10"
                                         border="1px solid black"
                                         borderRadius="50px"
                                     >
@@ -173,7 +173,7 @@ const MailChimp = () => {
                                         Create A Landing Page
                                     </Button>
 
-                                    <a style={{"marginTop":"55px"}} href="https://mailchimp.com/features/landing-pages/">
+                                    <a style={{"marginTop":"45px"}} href="https://mailchimp.com/features/landing-pages/">
                                         Learm More About Landing Page
                                     </a>
                                 </Box>
@@ -341,7 +341,7 @@ const MailChimp = () => {
                 {/* ID - 9 */}
                 {/* COLOUR DIV */}
 
-                <Container maxW="100%" 
+                <Box w="100%" margin="auto"
                 // border="solid green 1px"
                 >
                     <div className="Colur-div" margin="auto" justifyContent="center">
@@ -353,10 +353,12 @@ const MailChimp = () => {
                             </Box>
                         </Box>
                         <Box className="Colour-div-box2" bgColor="#ffe01b" >
-                            <Text width="63%" fontSize="2.5vw" textAlign="center" padding="100px">Nice work. Once you’ve sent your first email campaign, you’re officially part of the club.</Text>
+                            <Text width="63%" margin="auto" 
+                            // border="solid black 1px" 
+                            fontSize="2.5vw" textAlign="center" padding="50px">Nice work. Once you’ve sent your first email campaign, you’re officially part of the club.</Text>
                         </Box>
                     </div>
-                </Container>
+                </Box>
 
                 {/* WHITE BACKGROUND SECTION */}
 

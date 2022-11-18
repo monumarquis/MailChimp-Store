@@ -64,7 +64,7 @@ const MarketingPage = () => {
                                 <Box  bgColor="#efeeea">
                                     <Text className="text-hover" fontSize='17px' fontWeight="600">SUCCESS STORIES</Text>
 
-                                    <Flex>
+                                    <Flex >
                                         <Text className="text-hover" fontSize='40px'>Furniture maker Mac Collins on heritage-led design</Text>
 
                                         <Box marginTop="50px" fontSize="22px" padding="10px"><BsArrowUpRight /></Box>
@@ -401,7 +401,7 @@ const MarketingPage = () => {
 
                 {/* YELLOW DIV */}
 
-                <Box
+                <Box 
                     border="solid #ffe01b 1px"
                     bgColor="#ffe01b" marginTop="60px" textAlign={"center"}>
                     <Box margin="auto" marginTop="100px" mb="10">
@@ -429,11 +429,11 @@ const MarketingPage = () => {
                         </Button>
                     </Box>
                 </Box>
-              
+              <Footer/>
             </Container>
-            <Box>
+            {/* <Box>
                 <Footer />
-            </Box>
+            </Box> */}
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { GET_DATA } from "./actionTypes";
+import { GET_DATA, LOGOUT } from "./actionTypes";
 import { FILTER_DATA } from './actionTypes'
 import { USER_EMAIL} from './actionTypes';
 
@@ -38,7 +38,13 @@ const reducer = ( store = initState , {type , payload}) =>{
                     isAuth:true,
                  }
         }
-            
+         case LOGOUT:{
+            return{
+                ...store,
+                email:payload,
+                isAuth:false,
+            }
+         }   
         default:
             return store;
     }

@@ -1,4 +1,4 @@
-import { GET_DATA, USER_EMAIL} from './actionTypes';
+import { GET_DATA, LOGOUT, USER_EMAIL} from './actionTypes';
 import { FILTER_DATA } from './actionTypes'
 
 
@@ -22,3 +22,4 @@ export const userEmail = (payload) =>{
         payload : payload
     }
 }
+export const logout = () => ({ type: LOGOUT });

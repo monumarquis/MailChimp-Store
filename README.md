@@ -3,6 +3,8 @@ Clone of E-commerce website MailChimp which gives platform to the users to creat
 create good and professional mails.
 It is a collaborative project which is done with the help of 5 members in a week.
 
+## Live Link: https://mailchimp-clone-project.netlify.app/
+
 ## The website contains several functionality, below is the demo pictures of the website pages along with the descripton of each page that has been build by me and my team members:
 # 1) Landing Page:
   ![2022-12-06 (17)](https://user-images.githubusercontent.com/105919527/205917949-9142914a-8fcc-486e-aaf7-5b0080f4fd71.png)

@@ -1,5 +1,5 @@
 # EmailChimp
-Clone of E-commerce website MailChimp which gives platform to the users to create thier own store. MailChimp also provide some mail and website templates to 
+Clone of E-marketing website MailChimp which gives platform to the users to create thier own store. MailChimp also provide some mail and website templates to 
 create good and professional mails.
 It is a collaborative project which is done with the help of 5 members in a week.
 

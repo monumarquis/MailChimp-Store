@@ -7,7 +7,7 @@ It is a collaborative project which is done with the help of 5 members in a week
 
 ## The website contains several functionality, below is the demo pictures of the website pages along with the descripton of each page that has been build by me and my team members:
 # 1) Landing Page:
-  ![2022-12-06 (17)](https://user-images.githubusercontent.com/105919527/205917949-9142914a-8fcc-486e-aaf7-5b0080f4fd71.png)
+  ![Screenshot 2022-11-21 204611](https://user-images.githubusercontent.com/101381281/204876988-7f3ce8d3-ac0a-469a-ac4b-c30838f461aa.png)
   
   --------
   

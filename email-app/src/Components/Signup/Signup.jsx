@@ -12,28 +12,58 @@ import {
     Text,
   } from '@chakra-ui/react';
 
-import { signup } from "../../firebase-config";
+// import { signup } from "../../firebase-config";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
   
   
 export default function Signup() {
 
-  const [loading,setloading]=useState(false)
-  const emailRef=useRef()
-  const passwordRef=useRef()
-  const navigate=useNavigate()
+  const usenavigate=useNavigate()
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-  async function createuser(){
-      setloading(true)
-      try{
-          await signup(emailRef.current.value,passwordRef.current.value)
-          alert("user created")
-          navigate("/login")
-      }catch{        
-          alert("user already exist")
+  const handleSubmit = () => {
+      const payload = {
+          email,
+          password
       }
-      setloading(false)
+     
+      fetch("https://fragile-pear-dove.cyclic.app/user/signup", {
+          method : "POST",
+          body : JSON.stringify(payload),
+          headers : {
+              'Content-Type': 'application/json'
+          }
+      })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res)
+        alert(res.msg)
+        usenavigate("/login")
+        
+      })
+      .catch((err) => {
+        alert(err)
+      })
+
+  // old code start
+
+  // const [loading,setloading]=useState(false)
+  // const emailRef=useRef()
+  // const passwordRef=useRef()
+  // const navigate=useNavigate()
+
+  // async function createuser(){
+  //     setloading(true)
+  //     try{
+  //         await signup(emailRef.current.value,passwordRef.current.value)
+  //         alert("user created")
+  //         navigate("/login")
+  //     }catch{        
+  //         alert("user already exist")
+  //     }
+  //     setloading(false)
   }
 
 
@@ -47,7 +77,7 @@ export default function Signup() {
             <Text>Create a free account or <Link color={"teal.600"}>log in</Link></Text>
             <FormControl id="email">
               <FormLabel fontWeight={'bold'}>Email</FormLabel>
-              <Input type="email" ref={emailRef}/>
+              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
             </FormControl>
             <FormControl id="username">
               <FormLabel fontWeight={'bold'}>Username</FormLabel>
@@ -55,7 +85,7 @@ export default function Signup() {
             </FormControl>
             <FormControl id="password">
               <FormLabel fontWeight={'bold'}>Password</FormLabel>
-              <Input type="password" ref={passwordRef}/>
+              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={6}>
               <Stack
@@ -66,7 +96,10 @@ export default function Signup() {
               </Stack>
               <Text fontSize='xs'>By creating an account, you agree to our <Link color={"teal.600"}>Terms</Link> and have read and acknowledge the <Link color={"teal.600"}>Global Privacy Statement.</Link></Text>
               <Stack spacing={4} align='start'>
-              <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} onClick={createuser} disabled={loading}>
+              <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} 
+              // onClick={createuser} disabled={loading}
+              onClick={handleSubmit}
+              >
                 Sign Up
               </Button>
               </Stack>

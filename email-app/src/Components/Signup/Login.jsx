@@ -19,35 +19,66 @@ import {
   import { userEmail} from '../../Redux/actions'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-  
+ 
 export default function Login() {
 
-  const auth  = useSelector((store)=> store.isAuth );
-    const dispatch = useDispatch();
+  const usenavigate=useNavigate()
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-    const [loading,setloading]=useState(false);
-    const [userNotFound,setuserNotFount]=useState(false);
-    
-    const emailRef=useRef();
-    const passwordRef=useRef();
-    const usenavigate=useNavigate()
-
-    async function signin(){
-      setloading(true)
-      dispatch( userEmail(emailRef.current.value));
-      try{
-          await login(emailRef.current.value,passwordRef.current.value)
-          alert("Login Succesful")
-          usenavigate("/adminpannel");
-
-      }catch(error){
-          setuserNotFount(true)
-          var errorMessage = error.message;
-          console.log(errorMessage);
-          alert("User not Exist")
+  const handleSubmit = () => {
+      const payload = {
+          email,
+          password
       }
-      setloading(false)
+     
+      fetch("https://fragile-pear-dove.cyclic.app/user/login", {
+          method : "POST",
+          body : JSON.stringify(payload),
+          headers : {
+              'Content-Type': 'application/json'
+          }
+      })
+      .then((res) => res.json())
+      .then((res) => {
+          console.log(res)
+          alert(res.msg)
+          usenavigate("/adminpannel");
+          let token = localStorage.setItem("psctoken",res.data.token)
+          console.log(token);
+      })
+      .catch((err) => {
+        alert(err)
+      })
+
+  // const auth  = useSelector((store)=> store.isAuth );
+  //   const dispatch = useDispatch();
+
+  //   const [loading,setloading]=useState(false);
+  //   const [userNotFound,setuserNotFount]=useState(false);
+    
+  //   const emailRef=useRef();
+  //   const passwordRef=useRef();
+  //   const usenavigate=useNavigate()
+
+  //   async function signin(){
+  //     setloading(true)
+  //     dispatch( userEmail(emailRef.current.value));
+  //     try{
+  //         await login(emailRef.current.value,passwordRef.current.value)
+  //         alert("Login Succesful")
+  //         usenavigate("/adminpannel");
+
+  //     }catch(error){
+  //         setuserNotFount(true)
+  //         var errorMessage = error.message;
+  //         console.log(errorMessage);
+  //         alert("User not Exist")
+  //     }
+  //     setloading(false)
+  
   }
+
   
     return (
       <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} bg="#ffe01b">
@@ -59,13 +90,14 @@ export default function Login() {
             <Text fontSize={'md'}>Need a Mailchimp account? <NavLink color={"teal.600"} to="/signup">Create an account</NavLink></Text>
             <FormControl id="email">
               <FormLabel fontWeight={'bold'}>Username or Email</FormLabel>
-              <Input type="email" ref={emailRef} />
+              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
             <FormControl id="password">
               <FormLabel fontWeight={'bold'} >Password</FormLabel>
-              <Input type="password" ref={passwordRef} />
+              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </FormControl>
-            <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} disabled={loading} onClick={signin}>
+            <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} 
+            onClick={handleSubmit}>
                 Log in
               </Button>
               

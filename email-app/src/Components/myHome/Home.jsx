@@ -173,12 +173,13 @@ function Home() {
       </Box>
 
       {/* gird section  */}
-      <Box className="gridData">
+      <Box className="gridData" position="-moz-initial" >
         {gridData.map((el, i) => (
-          <Box key={i}>
+          <Box position="-moz-initial" key={i}>
             {console.log("vbh", el.text)}
 
             <GridOne
+              position="-moz-initial"
               key={el.id}
               image={el.image}
               text={el.text}

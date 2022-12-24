@@ -5,10 +5,17 @@
     width: 100%;
     margin-top:2%;
 }
+
+.Emarketin-Grid2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* padding: 2%; */
+    
+}
 .start_box{
-    width: 550px;
-    margin-left: 15%;
-    padding-top: 20px;
+    /* width: 550px; */
+    padding: 10%;
+    /* padding-top: 20px; */
 }
 .container>div{
     /* border: 2px solid red; */
@@ -103,6 +110,12 @@
         grid-template-rows: auto;
         gap: 25px;
     }
+    .Emarketin-Grid2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* padding: 2%; */
+        
+    }
     .cards1 ,.cards2, .cards4 , .cards3{
         border:0.1px solid rgb(186, 180, 180);
         font-size: 14px;
@@ -113,5 +126,12 @@
 
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: auto;
+    }
+
+    .Emarketin-Grid2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* padding: 2%; */
+        
     }
 }

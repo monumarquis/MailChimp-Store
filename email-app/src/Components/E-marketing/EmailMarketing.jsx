@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./email.css";
+import "../ResourcesPages/HelpCenterPage.css";
 
 // import AiOutlineArrowRight from 'react-icons/AiOutlineArrowRight';
 // angle right
@@ -14,8 +15,8 @@ import Footer from "../Footer/Footer";
 import Pricing from "../myHome/Pricing";
 export const EmailMarketing = () => {
   return (
-    <Box pt={40}>
-      <Flex>
+    <Box pt={10}>
+      <Box className="HelpCenter-1stDiv" w="100%">
         <Box className="start_box">
           <Text> Email Marketing Software</Text>
           <Heading>
@@ -26,10 +27,10 @@ export const EmailMarketing = () => {
             customers to open, click, and buy.
           </Text>
         </Box>
-        <Box>
+        <Box className="start_box">
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="300"
             src="https://www.youtube.com/embed/9i_WVm5LPSc"
             title="YouTube video player"
             frameborder="0"
@@ -37,11 +38,11 @@ export const EmailMarketing = () => {
             allowfullscreen
           ></iframe>
         </Box>
-      </Flex>
+      </Box>
       {/* ..........................................................................2ND PART .................................. */}
-      <Box w="90%" margin={"auto"}>
-        <Grid
-          className="container"
+      <Box w="90%" margin={"auto"} >
+        <Grid className="Emarketin-Grid2"
+          // className="container"
           // templateColumns="repeat(4,350px)" gap='2px'
           // marginTop={7}
           // padding={9}
@@ -128,11 +129,11 @@ export const EmailMarketing = () => {
         </Grid>
       </Box>
 
-      <Box backgroundColor="#e7b75f" h="700px" mt="5%" mb="5%">
-        <Flex gap="35px" ml="5%">
+      <Box backgroundColor="#e7b75f" mt="5%" mb="5%">
+        <Box gap="35px" ml="5%" className="HelpCenter-1stDiv">
           <Box mt="10%" padding={5}>
             <iframe
-              width="560"
+              width="100%"
               height="315"
               src="https://www.youtube.com/embed/C3iEEGCp0HY"
               title="YouTube video player"
@@ -141,7 +142,10 @@ export const EmailMarketing = () => {
               allowfullscreen
             ></iframe>
           </Box>
-          <Box width="550px" mt="12%" ml="2.5%">
+          <Box 
+          // width="550px" 
+          mt="12%" ml="2.5%"
+          >
             <Heading fontSize="30px">
               Outperform your last campaign with Mailchimp's data-driven tools
             </Heading>
@@ -160,7 +164,7 @@ export const EmailMarketing = () => {
               Sign up
             </Button>
           </Box>
-        </Flex>
+        </Box>
       </Box>
       {/* .................................FIND THE RIGHT PLAN ................................................ */}
       {/* <Box bg="#f6f6f4" pb="80px">

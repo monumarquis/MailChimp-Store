@@ -45,7 +45,7 @@ const HelpCenterPage = () => {
                 // border="solid yellow 1px" 
                 >
                     <Flex className="Input-Box" margin="auto" marginTop="100px" alignItems="center">
-                        <Input w="90%" padding="20px" fontSize="20px" variant='unstyled' placeholder='Search Help Center' />
+                        <Input w="90%" position="-moz-initial" padding="20px" fontSize="20px" variant='unstyled' placeholder='Search Help Center' />
                         <Box fontSize="20px"><FiSearch /></Box>
                     </Flex>
 

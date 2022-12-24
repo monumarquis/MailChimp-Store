@@ -17,7 +17,7 @@ function Pricing() {
       <Heading textAlign="center" pt="80px" mb="40px">Find the right plan</Heading>
       <Box className="price_section">
         <Box  className="cards1" >
-          <Heading mb="15px">Primium</Heading>
+          <Heading mb="15px">Premium</Heading>
           <Text mb="15px">
             Our most advanced tools, unlimited contacts, and priority support;
             built for teams.
@@ -75,7 +75,7 @@ function Pricing() {
           </Box>
         </Box>
         {/* -----1---- */}
-        <Box className="cards2" position="relative">
+        <Box className="cards2" position="-moz-initial">
 {/* <Box position="absolute" top={-10} left={0} bg="#c5dbf2" border="0.1px solid rgb(186, 180, 180)" width="100%" height="40px"><Text textAlign="center" mt="8px" >Mailchimp Recommends</Text></Box> */}
           <Heading mb="15px">Standerd</Heading>
           <Text mb="15px">
@@ -269,6 +269,7 @@ function Pricing() {
             background="#ffe01b"
             border="1px solid black"
             pos="-moz-initial"
+            position="-moz-initial"
           >
           See all plan Details
           </Button>

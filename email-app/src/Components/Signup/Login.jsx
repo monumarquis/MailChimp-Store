@@ -19,6 +19,7 @@ import {
   import { userEmail} from '../../Redux/actions'
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import axios from 'axios';
  
 export default function Login() {
 
@@ -26,56 +27,27 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
       const payload = {
           email,
           password
       }
      
-      fetch("https://fragile-pear-dove.cyclic.app/user/login", {
-          method : "POST",
-          body : JSON.stringify(payload),
-          headers : {
-              'Content-Type': 'application/json'
-          }
-      })
-      .then((res) => res.json())
-      .then((res) => {
-          console.log(res)
-          alert(res.msg)
-          usenavigate("/adminpannel");
-          let token = localStorage.setItem("psctoken",res.data.token)
-          console.log(token);
-      })
-      .catch((err) => {
-        alert(err)
-      })
-
-  // const auth  = useSelector((store)=> store.isAuth );
-  //   const dispatch = useDispatch();
-
-  //   const [loading,setloading]=useState(false);
-  //   const [userNotFound,setuserNotFount]=useState(false);
-    
-  //   const emailRef=useRef();
-  //   const passwordRef=useRef();
-  //   const usenavigate=useNavigate()
-
-  //   async function signin(){
-  //     setloading(true)
-  //     dispatch( userEmail(emailRef.current.value));
-  //     try{
-  //         await login(emailRef.current.value,passwordRef.current.value)
-  //         alert("Login Succesful")
-  //         usenavigate("/adminpannel");
-
-  //     }catch(error){
-  //         setuserNotFount(true)
-  //         var errorMessage = error.message;
-  //         console.log(errorMessage);
-  //         alert("User not Exist")
-  //     }
-  //     setloading(false)
+      try{
+        let res = await axios.post("https://fragile-pear-dove.cyclic.app/user/login", payload)
+     console.log(res)
+     if(res.data === "Login failed")
+     {
+       alert("Wrong Password or Email");
+       return;
+     }
+     alert("Login successfull");
+     usenavigate("/adminpannel");
+     }
+     catch(err)
+     {
+       console.log(err);
+     }
   
   }
 
@@ -88,23 +60,23 @@ export default function Login() {
             <Stack py={14} spacing={8} w={"100%"}>
             <Heading fontSize={'4xl'}>Log In</Heading>
             <Text fontSize={'md'}>Need a Mailchimp account? <NavLink color={"teal.600"} to="/signup">Create an account</NavLink></Text>
-            <FormControl id="email">
+            <FormControl id="email" position="-moz-initial">
               <FormLabel fontWeight={'bold'}>Username or Email</FormLabel>
-              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <Input type="email" position="-moz-initial" value={email} onChange={(e) => setEmail(e.target.value)} />
             </FormControl>
-            <FormControl id="password">
+            <FormControl id="password" position="-moz-initial">
               <FormLabel fontWeight={'bold'} >Password</FormLabel>
-              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+              <Input type="password" position="-moz-initial" value={password} onChange={(e) => setPassword(e.target.value)} />
             </FormControl>
-            <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} 
+            <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} position="-moz-initial"
             onClick={handleSubmit}>
                 Log in
               </Button>
               
             <Stack spacing={6}>
-              <Stack
+              <Stack 
                 align={'center'}>
-                <Checkbox size='lg'> <Text fontSize='md' fontWeight={'bold'}>Keep me Logged in </Text> </Checkbox>
+                <Checkbox size='lg' position="-moz-initial"> <Text fontSize='md' fontWeight={'bold'}>Keep me Logged in </Text> </Checkbox>
               </Stack>
               <Stack spacing={4} align='center'>
               <Text fontSize='md' ><Link color={"teal.600"}>Forget username?</Link> . <Link color={"teal.600"}>Forget Password?</Link></Text>

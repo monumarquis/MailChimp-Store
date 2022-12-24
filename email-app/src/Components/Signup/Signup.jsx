@@ -15,7 +15,7 @@ import {
 // import { signup } from "../../firebase-config";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-  
+import axios from "axios"
   
 export default function Signup() {
 
@@ -23,47 +23,28 @@ export default function Signup() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
       const payload = {
           email,
           password
       }
      
-      fetch("https://fragile-pear-dove.cyclic.app/user/signup", {
-          method : "POST",
-          body : JSON.stringify(payload),
-          headers : {
-              'Content-Type': 'application/json'
-          }
-      })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res)
-        alert(res.msg)
-        usenavigate("/login")
-        
-      })
-      .catch((err) => {
-        alert(err)
-      })
-
-  // old code start
-
-  // const [loading,setloading]=useState(false)
-  // const emailRef=useRef()
-  // const passwordRef=useRef()
-  // const navigate=useNavigate()
-
-  // async function createuser(){
-  //     setloading(true)
-  //     try{
-  //         await signup(emailRef.current.value,passwordRef.current.value)
-  //         alert("user created")
-  //         navigate("/login")
-  //     }catch{        
-  //         alert("user already exist")
-  //     }
-  //     setloading(false)
+    try{
+       let res = await axios.post("https://fragile-pear-dove.cyclic.app/user/signup", payload)
+    console.log(res)
+    if(res.data === "User already exist")
+    {
+      alert(res.data);
+      return;
+    }
+    alert("Signup success");
+    usenavigate("/login");
+    }
+    catch(err)
+    {
+      alert("Wrong Data");
+    }
+      
   }
 
 
@@ -75,28 +56,28 @@ export default function Signup() {
             <Stack mx={8}  py={6} spacing={8} w={"100%"}>
             <Heading fontSize={'3xl'}>Sign up for Mailchimp</Heading>
             <Text>Create a free account or <Link color={"teal.600"}>log in</Link></Text>
-            <FormControl id="email">
+            <FormControl id="email" position="-moz-initial">
               <FormLabel fontWeight={'bold'}>Email</FormLabel>
-              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+              <Input type="email" position="-moz-initial" value={email} onChange={(e) => setEmail(e.target.value)}/>
             </FormControl>
-            <FormControl id="username">
+            <FormControl id="username" position="-moz-initial">
               <FormLabel fontWeight={'bold'}>Username</FormLabel>
-              <Input type="text" />
+              <Input type="text" position="-moz-initial" />
             </FormControl>
-            <FormControl id="password">
+            <FormControl id="password" position="-moz-initial">
               <FormLabel fontWeight={'bold'}>Password</FormLabel>
-              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+              <Input type="password" position="-moz-initial" value={password} onChange={(e) => setPassword(e.target.value)}/>
             </FormControl>
             <Stack spacing={6}>
               <Stack
                 direction={{ base: 'column', sm: 'row' }}
                 align={'start'}
                 justify={'space-between'}>
-                <Checkbox size='lg'> <Text fontSize='xs'>I dont't want to receive emails about Mailchimp and related and intuit product and feature updates, marketing best practices, and promotions from Mailchimp. </Text> </Checkbox>
+                <Checkbox size='lg' position="-moz-initial"> <Text fontSize='xs'>I dont't want to receive emails about Mailchimp and related and intuit product and feature updates, marketing best practices, and promotions from Mailchimp. </Text> </Checkbox>
               </Stack>
               <Text fontSize='xs'>By creating an account, you agree to our <Link color={"teal.600"}>Terms</Link> and have read and acknowledge the <Link color={"teal.600"}>Global Privacy Statement.</Link></Text>
-              <Stack spacing={4} align='start'>
-              <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} 
+              <Stack spacing={4} align='start' position="-moz-initial">
+              <Button size='md' px={8} colorScheme={'teal'} variant={'solid'} position="-moz-initial" 
               // onClick={createuser} disabled={loading}
               onClick={handleSubmit}
               >

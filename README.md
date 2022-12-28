@@ -4,6 +4,8 @@ create good and professional mails.
 It is a collaborative project which is done with the help of 5 members in a week.
 
 
+<!-- Old Link with some css error : https://mailchimp-clone-project.netlify.app/ -->
+
 ## Live Link: https://mailchimp-clone-deploy.netlify.app/
 
 

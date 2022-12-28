@@ -4,7 +4,7 @@ import "./grid1.style.css";
 function GridOne(props) {
   console.log("vaibav", props.image);
   return (
-    <Box className="grid" position="relative">
+    <Box className="grid" position="-moz-initial">
       <Box w="100%" className="grid-Image">
         <Image src={props.image} alt="Desktop card" height={500} width="100%" />
         <Text

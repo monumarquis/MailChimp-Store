@@ -66,7 +66,7 @@ const AddtoProduct = () => {
      <Stack  direction={{"base":"column","sm":"column","md":"column","lg":"row"}} spacing="40" mb="10" >
              <VStack w={["100%","100%","100%","40%"]} spacing="20">
                 <Heading fontWeight={400} color='gray.800'>Now let’s add your first product:</Heading>
-                <Input zIndex={0}pos="sticky" 
+                <Input zIndex={0} position="-moz-initial"
                  onChange={handlechange}
                  value= {state.url}
                  name="url"
@@ -76,7 +76,7 @@ const AddtoProduct = () => {
                 
                <Box w="100%">
                     <Text mb="2"color="black" fontWeight={600} >Product Name</Text>
-                    <Input pos="sticky"  
+                    <Input position="-moz-initial"  
                     value={state.name} 
                     onChange={handlechange} 
                     name="name"
@@ -92,7 +92,7 @@ const AddtoProduct = () => {
                     children='$'
                     />
                    
-                    <Input pos="sticky" placeholder='0' borderColor={"black"} 
+                    <Input position="-moz-initial" placeholder='0' borderColor={"black"} 
                      value={state.price}  
                     onChange={handlechange} 
                     name="price"
@@ -101,13 +101,13 @@ const AddtoProduct = () => {
                 </InputGroup>
                 </Box>
                <HStack w="100%" spacing={3} border="0.2px" borderColor={"gray"} p="6">
-                   <input type="checkbox" pos="sticky"   />
+                   <input type="checkbox" position="-moz-initial"   />
                     <Text mb="2"  color="black" fontWeight={600} >This product is taxt-exempt</Text>
                </HStack>
                
                <Box w="100%">
                     <Text mb="2"color="black" fontWeight={600} >Product description</Text>
-                    <Input type="text" pos="sticky"  placeholder='An optional description of your product' borderColor={"black"}
+                    <Input type="text" position="-moz-initial"  placeholder='An optional description of your product' borderColor={"black"}
                      py="20" 
                      value={state.des}  
                      onChange={handlechange} 
